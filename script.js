@@ -1,3 +1,5 @@
+const WHATSAPP_URL = 'https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion.';
+
 document.addEventListener('DOMContentLoaded', () => {
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
@@ -21,11 +23,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Smooth Scolling for Anchor Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+            const targetSelector = this.getAttribute('href');
+            if (!targetSelector || targetSelector === '#') {
+                return;
+            }
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const targetElement = document.querySelector(targetSelector);
+            if (!targetElement) {
+                return;
+            }
+
+            e.preventDefault();
+            targetElement.scrollIntoView({ behavior: 'smooth' });
         });
     });
 
@@ -98,4 +107,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Contact form fallback to WhatsApp without backend.
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer');
+        });
+    }
+});
+
+// --- Loader Fade Out Logic ---
+// We place this outside DOMContentLoaded to wait for images and resources
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        // Keep loader short so first paint is not blocked.
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 800); // Matches CSS transition time
+        }, 900);
+    }
 });

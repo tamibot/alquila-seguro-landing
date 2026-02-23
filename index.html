@@ -4,15 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alquila Seguro | Gestión Integral de Propiedades</title>
+    <title>Alquila tu depa rápido y seguro | Gestión Inmobiliaria | AlquilaSeguro</title>
     <meta name="description"
-        content="Nos encargamos de todo: desde la búsqueda del mejor inquilino hasta la resolución de problemas. Alquila tu departamento sin estrés.">
+        content="Alquila tu casa o departamento rápido y seguro. Verificamos inquilinos, garantizamos la renta puntual y nos encargamos de toda la gestión sin preocupaciones.">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.alquilaseguro.com.pe/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.alquilaseguro.com.pe/">
+    <meta property="og:title" content="Alquila tu depa rápido y seguro | AlquilaSeguro">
+    <meta property="og:description"
+        content="Alquila tu casa o departamento rápido y seguro. Verificamos inquilinos, garantizamos la renta puntual y nos encargamos de toda la gestión.">
+    <meta property="og:image" content="https://www.alquilaseguro.com.pe/img/hero_background.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.alquilaseguro.com.pe/">
+    <meta property="twitter:title" content="Alquila tu depa rápido y seguro | AlquilaSeguro">
+    <meta property="twitter:description"
+        content="Alquila tu casa o departamento rápido y seguro. Verificamos inquilinos, garantizamos la renta puntual y nos encargamos de toda la gestión.">
+    <meta property="twitter:image" content="https://www.alquilaseguro.com.pe/img/hero_background.png">
 
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,11 +37,59 @@
 </head>
 
 <body>
+    <!-- Premium Full Screen Loader Overlay -->
+    <div id="loader">
+        <div class="loader-content">
+            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" class="premium-loader-svg">
+                <defs>
+                    <linearGradient id="gradient-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="var(--color-primary)" />
+                        <stop offset="100%" stop-color="var(--color-secondary)" />
+                    </linearGradient>
+                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="2" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                </defs>
+
+                <!-- Base ground line -->
+                <line class="ground-line" x1="10" y1="105" x2="110" y2="105" />
+
+                <!-- Main Building -->
+                <g class="building-paths">
+                    <path class="b-line b-left" d="M 30 105 L 30 45" />
+                    <path class="b-line b-right" d="M 90 105 L 90 45" />
+                    <path class="b-line b-roof" d="M 20 45 L 60 15 L 100 45" />
+                    <path class="b-line b-door" d="M 50 105 L 50 80 A 10 10 0 0 1 70 80 L 70 105" />
+                    <line class="b-line b-door-split" x1="60" y1="80" x2="60" y2="105" />
+                </g>
+
+                <!-- Windows -->
+                <g class="windows">
+                    <rect class="window w-1" x="42" y="55" width="12" height="12" rx="2" />
+                    <rect class="window w-2" x="66" y="55" width="12" height="12" rx="2" />
+                </g>
+
+                <!-- Security Shield Check -->
+                <g class="shield-group" transform="translate(65, 70)">
+                    <path class="shield-bg"
+                        d="M 15 0 L 30 8 L 30 22 C 30 32, 22 38, 15 42 C 8 38, 0 32, 0 22 L 0 8 Z" />
+                    <path class="shield-check" d="M 8 20 L 13 25 L 22 13" />
+                </g>
+            </svg>
+
+            <div class="loader-text-wrapper">
+                <span class="loader-text">AlquilaSeguro</span>
+                <div class="shimmer"></div>
+            </div>
+            <p class="loader-subtext">Preparando tu experiencia premium...</p>
+        </div>
+    </div>
 
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">
+                <a href="#inicio" class="logo">
                     <!-- SVG Logo Inline -->
                     <svg viewBox="0 0 100 100" class="logo-icon">
                         <path d="M50 10 L10 50 L20 60 L50 30 L80 60 L90 50 Z" fill="#04395b" stroke="none" />
@@ -44,7 +105,8 @@
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#proceso">Cómo Funciona</a></li>
                     <li><a href="#faq">Preguntas</a></li>
-                    <li><a href="#contacto" class="btn">Contáctanos</a></li>
+                    <li><a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" class="btn">Contáctanos</a></li>
                 </ul>
                 <div class="mobile-menu-btn">
                     <i class="fa-solid fa-bars"></i>
@@ -53,333 +115,364 @@
         </div>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <span class="badge">Gestión Inmobiliaria 360°</span>
-                <h1>Alquila seguro sin preocupaciones</h1>
-                <p>La tranquilidad de saber que tu propiedad está en las mejores manos. Gestión integral, inquilinos
-                    verificados y renta puntual garantizada.</p>
-                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-                    <a href="#contacto" class="btn">Solicitar Evaluación <i class="fa-solid fa-arrow-right"
-                            style="margin-left: 10px;"></i></a>
-                    <a href="#proceso" class="btn secondary-btn"><i class="fa-solid fa-play"
-                            style="margin-right: 10px;"></i> Ver video</a>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="badge">Gestión Inmobiliaria 360°</span>
+                    <h1>Alquila tu depa rápido y seguro</h1>
+                    <p>Deja la gestión en nuestras manos y alquila seguro. Filtramos inquilinos, garantizamos tu pago
+                        puntual y cuidamos tu propiedad. ¡Alquila tu depa rápido y sin estrés!</p>
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" class="btn">Quiero alquilar mi depa <i class="fa-solid fa-arrow-right"
+                                style="margin-left: 10px;"></i></a>
+                        <a href="#proceso" class="btn secondary-btn"><i class="fa-solid fa-play"
+                                style="margin-right: 10px;"></i> Ver video</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div style="position: relative;">
+                            <!-- Using generated image for services promo as fallback for video poster if needed, or just a nice image here -->
+                            <img src="img/family_moving.png" alt="Happy family moving in" width="600" height="400"
+                                loading="eager" fetchpriority="high" decoding="async">
+                            <div class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="hero-visual">
-                <div class="hero-card">
-                    <div style="position: relative;">
-                        <!-- Using generated image for services promo as fallback for video poster if needed, or just a nice image here -->
-                        <img src="img/family_moving.png" alt="Happy family moving in" width="600" height="400"
-                            loading="eager">
-                        <div class="play-button">
+        <section class="stats">
+            <div class="container">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <h3>23</h3>
+                        <p>Días promedio</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>+10</h3>
+                        <p>Años Experiencia</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>0%</h3>
+                        <p>Tasa Desalojo</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>99%</h3>
+                        <p>Cobro Puntual</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <div class="shape-bg"></div>
+            <div class="container">
+                <div style="text-align: center;">
+                    <h2 class="section-title">Servicios Premium</h2>
+                    <p class="section-subtitle">Diseñamos una experiencia de gestión inmobiliaria que te libera de la
+                        carga
+                        operativa y potencia tu rentabilidad.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3>Difusión para Alquilar Rápido</h3>
+                        <p>Estrategia digital 360°. Fotografía HDR, recorridos virtuales y posicionamiento destacado en
+                            los
+                            principales portales inmobiliarios.</p>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" class="learn-more">Quiero alquilar rápido <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h3>Inquilinos Verificados</h3>
+                        <p>Análisis financiero, legal y psicológico del inquilino. Verificamos referencias laborales,
+                            antecedentes y capacidad de pago real.</p>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" class="learn-more">Quiero alquilar seguro <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <h3>Renta Garantizada</h3>
+                        <p>Tecnología de cobranza automatizada. Si hay retrasos, aplicamos moras y gestionamos el cobro
+                            sin
+                            que tú tengas que involucrarte.</p>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" class="learn-more">Alquilar mi deparmento <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3>Facility Management</h3>
+                        <p>Red de proveedores certificados para reparaciones y mantenimiento preventivo. Soluciones
+                            rápidas
+                            al mejor costo.</p>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" class="learn-more">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <h3>Blindaje Legal</h3>
+                        <p>Contratos redactados por expertos en ley de arrendamiento. Cláusulas de protección contra
+                            impago
+                            y daños al inmueble.</p>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" class="learn-more">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>App Propietarios</h3>
+                        <p>Monitorea tu inversión en tiempo real. Pagos, contratos, tickets de mantenimiento y
+                            rentabilidad
+                            desde tu smartphone.</p>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" class="learn-more">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (Vertical Video Shorts) -->
+        <section id="testimonios" class="testimonials-section">
+            <div class="container">
+                <div class="testimonials-header">
+                    <span class="badge"
+                        style="background: rgba(4, 57, 91, 0.1); color: var(--color-primary); border-color: rgba(4, 57, 91, 0.1);">Historias
+                        de Éxito</span>
+                    <h2 class="section-title">Propietarios Felices</h2>
+                    <p class="section-subtitle">Descubre por qué cientos de propietarios confían en nosotros para
+                        gestionar
+                        su patrimonio.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-video-card">
+                        <iframe src="https://www.youtube.com/embed/shorts/VIDEO_ID_1?controls=0&rel=0"
+                            title="Testimonio 1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            loading="lazy"
+                            allowfullscreen></iframe>
+                        <div class="play-icon-overlay">
                             <i class="fa-solid fa-play"></i>
                         </div>
+                        <div class="video-overlay">
+                            <span class="client-name">María González</span>
+                            <span class="client-role">Propietaria en Miraflores</span>
+                            <div style="color: #FFD700; margin-top: 5px; font-size: 0.8rem;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="stats">
-        <div class="container">
-            <div class="stats-container">
-                <div class="stat-item">
-                    <h3>23</h3>
-                    <p>Días promedio</p>
-                </div>
-                <div class="stat-item">
-                    <h3>+10</h3>
-                    <p>Años Experiencia</p>
-                </div>
-                <div class="stat-item">
-                    <h3>0%</h3>
-                    <p>Tasa Desalojo</p>
-                </div>
-                <div class="stat-item">
-                    <h3>99%</h3>
-                    <p>Cobro Puntual</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="servicios" class="services">
-        <div class="shape-bg"></div>
-        <div class="container">
-            <div style="text-align: center;">
-                <h2 class="section-title">Servicios Premium</h2>
-                <p class="section-subtitle">Diseñamos una experiencia de gestión inmobiliaria que te libera de la carga
-                    operativa y potencia tu rentabilidad.</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-bullhorn"></i>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-video-card">
+                        <iframe src="https://www.youtube.com/embed/shorts/VIDEO_ID_2?controls=0&rel=0"
+                            title="Testimonio 2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            loading="lazy"
+                            allowfullscreen></iframe>
+                        <div class="play-icon-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="video-overlay">
+                            <span class="client-name">Carlos Rodríguez</span>
+                            <span class="client-role">Inversionista Inmobiliario</span>
+                            <div style="color: #FFD700; margin-top: 5px; font-size: 0.8rem;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Marketing Avanzado</h3>
-                    <p>Estrategia digital 360°. Fotografía HDR, recorridos virtuales y posicionamiento destacado en los
-                        principales portales inmobiliarios.</p>
-                    <a href="#" class="learn-more">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
 
-                <div class="service-card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-user-shield"></i>
-                    </div>
-                    <h3>Filtro Anti-Riesgo</h3>
-                    <p>Análisis financiero, legal y psicológico del inquilino. Verificamos referencias laborales,
-                        antecedentes y capacidad de pago real.</p>
-                    <a href="#" class="learn-more">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-sack-dollar"></i>
-                    </div>
-                    <h3>Renta Garantizada</h3>
-                    <p>Tecnología de cobranza automatizada. Si hay retrasos, aplicamos moras y gestionamos el cobro sin
-                        que tú tengas que involucrarte.</p>
-                    <a href="#" class="learn-more">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                    <h3>Facility Management</h3>
-                    <p>Red de proveedores certificados para reparaciones y mantenimiento preventivo. Soluciones rápidas
-                        al mejor costo.</p>
-                    <a href="#" class="learn-more">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-scale-balanced"></i>
-                    </div>
-                    <h3>Blindaje Legal</h3>
-                    <p>Contratos redactados por expertos en ley de arrendamiento. Cláusulas de protección contra impago
-                        y daños al inmueble.</p>
-                    <a href="#" class="learn-more">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-
-                <div class="service-card">
-                    <div class="icon-wrapper">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                    </div>
-                    <h3>App Propietarios</h3>
-                    <p>Monitorea tu inversión en tiempo real. Pagos, contratos, tickets de mantenimiento y rentabilidad
-                        desde tu smartphone.</p>
-                    <a href="#" class="learn-more">Ver más <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section (Vertical Video Shorts) -->
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="testimonials-header">
-                <span class="badge"
-                    style="background: rgba(4, 57, 91, 0.1); color: var(--color-primary); border-color: rgba(4, 57, 91, 0.1);">Historias
-                    de Éxito</span>
-                <h2 class="section-title">Propietarios Felices</h2>
-                <p class="section-subtitle">Descubre por qué cientos de propietarios confían en nosotros para gestionar
-                    su patrimonio.</p>
-            </div>
-
-            <div class="testimonials-grid">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-video-card">
-                    <iframe src="https://www.youtube.com/embed/shorts/VIDEO_ID_1?controls=0&rel=0" title="Testimonio 1"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div class="play-icon-overlay">
-                        <i class="fa-solid fa-play"></i>
-                    </div>
-                    <div class="video-overlay">
-                        <span class="client-name">María González</span>
-                        <span class="client-role">Propietaria en Miraflores</span>
-                        <div style="color: #FFD700; margin-top: 5px; font-size: 0.8rem;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-video-card">
+                        <iframe src="https://www.youtube.com/embed/shorts/VIDEO_ID_3?controls=0&rel=0"
+                            title="Testimonio 3"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            loading="lazy"
+                            allowfullscreen></iframe>
+                        <div class="play-icon-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="video-overlay">
+                            <span class="client-name">Ana & Jorge</span>
+                            <span class="client-role">Propietarios en San Isidro</span>
+                            <div style="color: #FFD700; margin-top: 5px; font-size: 0.8rem;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="testimonial-video-card">
-                    <iframe src="https://www.youtube.com/embed/shorts/VIDEO_ID_2?controls=0&rel=0" title="Testimonio 2"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div class="play-icon-overlay">
-                        <i class="fa-solid fa-play"></i>
-                    </div>
-                    <div class="video-overlay">
-                        <span class="client-name">Carlos Rodríguez</span>
-                        <span class="client-role">Inversionista Inmobiliario</span>
-                        <div style="color: #FFD700; margin-top: 5px; font-size: 0.8rem;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="testimonial-video-card">
-                    <iframe src="https://www.youtube.com/embed/shorts/VIDEO_ID_3?controls=0&rel=0" title="Testimonio 3"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <div class="play-icon-overlay">
-                        <i class="fa-solid fa-play"></i>
-                    </div>
-                    <div class="video-overlay">
-                        <span class="client-name">Ana & Jorge</span>
-                        <span class="client-role">Propietarios en San Isidro</span>
-                        <div style="color: #FFD700; margin-top: 5px; font-size: 0.8rem;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
+                <div style="text-align: center; margin-top: 50px;">
+                    <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                        target="_blank" class="btn">Quiero vivir la experiencia y alquilar seguro</a>
                 </div>
             </div>
+        </section>
 
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="#contacto" class="btn">Quiero vivir la experiencia</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Additional CTA Strip -->
-    <section class="cta-strip">
-        <div class="container">
-            <div class="cta-content">
-                <h2>¿Tu departamento está vacío?</h2>
-                <p>Cada día sin inquilino es dinero que pierdes. Déjanos encontrar al candidato ideal en tiempo récord.
-                </p>
-                <a href="#contacto" class="btn btn-pulse"
-                    style="background: white; color: var(--color-primary);">Evaluación Gratuita Inmediata</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="feature-split">
-        <div class="container">
-            <div class="feature-container">
-                <div class="feature-image">
-                    <img src="img/property_management.png" alt="Property manager using tablet" width="600" height="400"
-                        loading="lazy">
-                </div>
-                <div class="feature-content">
-                    <h3>Tecnología que vuelve todo más simple</h3>
-                    <p>Olvídate del papeleo y las llamadas interminables. Nuestra plataforma digital centraliza toda la
-                        operación de tu inmueble.</p>
-                    <ul class="check-list">
-                        <li><i class="fa-solid fa-circle-check"></i> Firma de contratos digitales con validez legal.
-                        </li>
-                        <li><i class="fa-solid fa-circle-check"></i> Recauda el alquiler automáticamente.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Reportes mensuales de estado de cuenta.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Notificaciones instantáneas de depósitos.</li>
-                    </ul>
-                    <a href="#contacto" class="btn" style="margin-top: 30px;">Conocer más</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="proceso" class="process">
-        <div class="container">
-            <div style="text-align: center;">
-                <h2 class="section-title">Pasos para el éxito</h2>
-                <p class="section-subtitle">Simplificamos el proceso de alquiler para que tú solo disfrutes de los
-                    beneficios.</p>
-            </div>
-
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h4>Valuación Inteligente</h4>
-                    <p>Análisis de big data para fijar el precio óptimo que maximice rentabilidad y minimice vacancia.
+        <!-- Additional CTA Strip -->
+        <section class="cta-strip">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>¿Tu apartamento está vacío? Es momento de alquilar rápido</h2>
+                    <p>Cada día sin inquilino es dinero que pierdes. Déjanos encontrar al candidato ideal en tiempo
+                        récord y alquilar seguro.
                     </p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h4>Difusión Masiva</h4>
-                    <p>Tu propiedad en todos los portales y redes sociales con contenido visual de alto impacto.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h4>Filtro & Firma</h4>
-                    <p>Selección rigurosa del candidato ideal y gestión integral del contrato notarial o digital.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h4>Gestión Total</h4>
-                    <p>Nos encargamos de la relación con el inquilino, cobros y mantenimiento mes a mes.</p>
+                    <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                        target="_blank" class="btn btn-pulse"
+                        style="background: white; color: var(--color-primary);">Quiero una Evaluación Gratuita</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contacto" class="contact-section">
-        <div class="container">
-            <div class="contact-card">
-                <div class="contact-bg"></div>
-                <div class="contact-content">
-                    <h3>¿Listo para rentabilizar tu propiedad?</h3>
-                    <p style="opacity: 0.9; font-size: 1.1rem; margin-bottom: 30px;">Déjanos tus datos y recibe una
-                        <strong>valuación comercial gratuita</strong> de tu inmueble en menos de 24 horas.
-                    </p>
-
-                    <div style="display: flex; flex-direction: column; gap: 20px;">
-                        <div style="display: flex; align-items: center; gap: 15px;">
-                            <i class="fa-solid fa-phone" style="font-size: 1.2rem;"></i>
-                            <span>+51 999 999 999</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 15px;">
-                            <i class="fa-solid fa-envelope" style="font-size: 1.2rem;"></i>
-                            <span>contacto@alquilaseguro.com.pe</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 15px;">
-                            <i class="fa-solid fa-location-dot" style="font-size: 1.2rem;"></i>
-                            <span>Av. Javier Prado 123, San Isidro</span>
-                        </div>
+        <section class="feature-split">
+            <div class="container">
+                <div class="feature-container">
+                    <div class="feature-image">
+                        <img src="img/property_management.png" alt="Property manager using tablet" width="600"
+                            height="400" loading="lazy" decoding="async">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Tecnología que vuelve todo más simple</h3>
+                        <p>Olvídate del papeleo y las llamadas interminables. Nuestra plataforma digital centraliza toda
+                            la
+                            operación de tu inmueble.</p>
+                        <ul class="check-list">
+                            <li><i class="fa-solid fa-circle-check"></i> Firma de contratos digitales con validez legal.
+                            </li>
+                            <li><i class="fa-solid fa-circle-check"></i> Recauda el alquiler automáticamente.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Reportes mensuales de estado de cuenta.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Notificaciones instantáneas de depósitos.</li>
+                        </ul>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" class="btn" style="margin-top: 30px;">Conocer más y alquilar rápido</a>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="contact-form-wrapper">
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <input type="text" placeholder="Nombre completo" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Correo electrónico" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="Teléfono / WhatsApp" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="3"
-                                placeholder="Detalles de la propiedad (Ubicación, tipo, etc.)"></textarea>
-                        </div>
-                        <button type="submit" class="btn" style="width: 100%;">Solicitar Asesoría</button>
-                    </form>
+        <section id="proceso" class="process">
+            <div class="container">
+                <div style="text-align: center;">
+                    <h2 class="section-title">Pasos para el éxito</h2>
+                    <p class="section-subtitle">Simplificamos el proceso de alquiler para que tú solo disfrutes de los
+                        beneficios.</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Valuación Inteligente</h4>
+                        <p>Análisis de big data para fijar el precio óptimo que maximice rentabilidad y minimice
+                            vacancia.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Difusión Masiva</h4>
+                        <p>Tu propiedad en todos los portales y redes sociales con contenido visual de alto impacto.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Filtro & Firma</h4>
+                        <p>Selección rigurosa del candidato ideal y gestión integral del contrato notarial o digital.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Gestión Total</h4>
+                        <p>Nos encargamos de la relación con el inquilino, cobros y mantenimiento mes a mes.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-bg"></div>
+                    <div class="contact-content">
+                        <h3>¿Listo para rentabilizar tu propiedad?</h3>
+                        <p style="opacity: 0.9; font-size: 1.1rem; margin-bottom: 30px;">Déjanos tus datos y recibe una
+                            <strong>valuación comercial gratuita</strong> de tu inmueble en menos de 24 horas.
+                        </p>
+
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <i class="fa-solid fa-phone" style="font-size: 1.2rem;"></i>
+                                <span>+51 912 462 976</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <i class="fa-solid fa-envelope" style="font-size: 1.2rem;"></i>
+                                <span>contacto@alquilaseguro.com.pe</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <i class="fa-solid fa-location-dot" style="font-size: 1.2rem;"></i>
+                                <span>Lima, Perú</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Teléfono / WhatsApp" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="3" name="details"
+                                    placeholder="Detalles de la propiedad (Ubicación, tipo, etc.)"></textarea>
+                            </div>
+                            <button type="submit" class="btn" style="width: 100%;">Solicitar Asesoría</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </main>
 
     <footer class="main-footer">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <a href="#" class="logo-footer">
+                    <a href="#inicio" class="logo-footer">
                         <svg viewBox="0 0 100 100" class="logo-icon-footer">
                             <path d="M50 10 L10 50 L20 60 L50 30 L80 60 L90 50 Z" fill="#fff" />
                             <rect x="25" y="50" width="18" height="18" rx="2" fill="#fff" />
@@ -391,10 +484,18 @@
                     <p>La plataforma líder en gestión inmobiliaria. Garantizamos tu renta y cuidamos tu propiedad como
                         si fuera nuestra.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
 
@@ -411,18 +512,18 @@
                 <div class="footer-links-col">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
-                        <li><a href="#">Libro de Reclamaciones</a></li>
+                        <li><a href="terminos-y-condiciones.html">Términos y Condiciones</a></li>
+                        <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="libro-de-reclamaciones.html">Libro de Reclamaciones</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-contact-col">
                     <h4>Contacto</h4>
                     <ul>
-                        <li><i class="fa-solid fa-phone"></i> +51 999 999 999</li>
+                        <li><i class="fa-solid fa-phone"></i> +51 912 462 976</li>
                         <li><i class="fa-solid fa-envelope"></i> contacto@alquilaseguro.com.pe</li>
-                        <li><i class="fa-solid fa-location-dot"></i> Av. Javier Prado 123, Lima.</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Lima, Perú.</li>
                     </ul>
                 </div>
             </div>
@@ -434,11 +535,12 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+    <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+        target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat en WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
