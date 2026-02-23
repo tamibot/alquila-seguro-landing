@@ -1,11 +1,12 @@
-const WHATSAPP_URL = 'https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion.';
-
 document.addEventListener('DOMContentLoaded', () => {
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
 
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
+        if (!question) {
+            return;
+        }
 
         question.addEventListener('click', () => {
             // Close other items
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Select elements to animate
-    const animatedElements = document.querySelectorAll('.service-card, .step, .stat-item, .testimonial-video-card, .feature-image, .feature-content');
+    const animatedElements = document.querySelectorAll('.service-card, .step, .stat-item, .testimonial-video-placeholder, .faq-item');
 
     animatedElements.forEach((el, index) => {
         el.classList.add('fade-up');
@@ -67,7 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (el.parentElement.classList.contains('services-grid') ||
             el.parentElement.classList.contains('process-steps') ||
             el.parentElement.classList.contains('stats-container') ||
-            el.parentElement.classList.contains('testimonials-grid')) {
+            el.parentElement.classList.contains('testimonials-grid') ||
+            el.parentElement.classList.contains('testimonials-grid-flat')) {
 
             // Calculate index within parent
             const indexInParent = Array.from(el.parentElement.children).indexOf(el);
@@ -108,12 +110,119 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Contact form fallback to WhatsApp without backend.
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            window.open(WHATSAPP_URL, '_blank', 'noopener,noreferrer');
+    // Scrollspy.
+    const sectionIds = ['inicio', 'servicios', 'proceso', 'testimonios', 'faq'];
+    const sectionElements = sectionIds
+        .map((id) => document.getElementById(id))
+        .filter(Boolean);
+    const navAnchors = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+
+    function updateScrollState() {
+        const scrollY = window.scrollY + 130;
+        let activeId = sectionIds[0];
+
+        sectionElements.forEach((section) => {
+            if (scrollY >= section.offsetTop) {
+                activeId = section.id;
+            }
+        });
+
+        navAnchors.forEach((anchor) => {
+            const href = anchor.getAttribute('href');
+            anchor.classList.toggle('active', href === `#${activeId}`);
+        });
+    }
+
+    updateScrollState();
+    window.addEventListener('scroll', updateScrollState, { passive: true });
+
+    // Hero video popup modal
+    const heroVideoTrigger = document.getElementById('hero-video-trigger');
+    const videoModal = document.getElementById('video-modal');
+    const videoModalDialog = videoModal?.querySelector('.video-modal-dialog');
+    const videoModalClose = document.getElementById('video-modal-close');
+    const heroVideoIframe = document.getElementById('hero-video-iframe');
+
+    function closeVideoModal() {
+        if (!videoModal || !heroVideoIframe) {
+            return;
+        }
+
+        videoModal.classList.remove('active');
+        videoModal.setAttribute('aria-hidden', 'true');
+        heroVideoIframe.src = '';
+        document.body.classList.remove('modal-open');
+    }
+
+    if (heroVideoTrigger && videoModal && heroVideoIframe) {
+        heroVideoTrigger.addEventListener('click', () => {
+            const videoId = heroVideoTrigger.dataset.videoId || 'SNKy5ZK891A';
+            heroVideoIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+            videoModal.classList.add('active');
+            videoModal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('modal-open');
+        });
+    }
+
+    if (videoModalClose) {
+        videoModalClose.addEventListener('click', closeVideoModal);
+    }
+
+    if (videoModal) {
+        videoModal.addEventListener('click', (event) => {
+            if (!videoModalDialog) {
+                return;
+            }
+
+            if (!videoModalDialog.contains(event.target)) {
+                closeVideoModal();
+            }
+        });
+    }
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && videoModal?.classList.contains('active')) {
+            closeVideoModal();
+        }
+    });
+
+    // Analytics events for GTM/GA4
+    function pushDataLayerEvent(payload) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(payload);
+    }
+
+    const ctaSelectors = [
+        'a.btn',
+        'a.learn-more',
+        '.whatsapp-float',
+        '.logo',
+        '.nav-links a'
+    ];
+
+    document.querySelectorAll(ctaSelectors.join(',')).forEach((element) => {
+        element.addEventListener('click', () => {
+            const href = element.getAttribute('href') || '';
+            const text = (element.textContent || '').trim().replace(/\s+/g, ' ');
+            const section = element.closest('section')?.id || 'header_or_footer';
+
+            pushDataLayerEvent({
+                event: 'cta_click',
+                cta_text: text,
+                cta_href: href,
+                cta_section: section,
+                cta_type: href.includes('wa.me') ? 'whatsapp' : 'navigation'
+            });
+        });
+    });
+
+    if (heroVideoTrigger) {
+        heroVideoTrigger.addEventListener('click', () => {
+            pushDataLayerEvent({
+                event: 'video_open',
+                video_id: heroVideoTrigger.dataset.videoId || 'SNKy5ZK891A',
+                video_context: 'hero'
+            });
         });
     }
 });
