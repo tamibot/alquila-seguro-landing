@@ -215,13 +215,37 @@ document.addEventListener('DOMContentLoaded', () => {
             const href = element.getAttribute('href') || '';
             const text = (element.textContent || '').trim().replace(/\s+/g, ' ');
             const section = element.closest('section')?.id || 'header_or_footer';
+            const isFloatingWhatsapp = element.classList.contains('whatsapp-float');
+            const isWhatsapp = href.includes('wa.me');
+            const ctaOrigin = isFloatingWhatsapp
+                ? 'floating_whatsapp'
+                : isWhatsapp
+                    ? 'landing_whatsapp'
+                    : 'navigation';
 
             sendAnalyticsEvent('cta_click', {
                 cta_text: text,
                 cta_href: href,
                 cta_section: section,
-                cta_type: href.includes('wa.me') ? 'whatsapp' : 'navigation'
+                cta_type: isWhatsapp ? 'whatsapp' : 'navigation',
+                cta_origin: ctaOrigin
             });
+
+            if (isFloatingWhatsapp) {
+                sendAnalyticsEvent('whatsapp_floating_click', {
+                    cta_text: text,
+                    cta_href: href,
+                    cta_section: section,
+                    cta_origin: ctaOrigin
+                });
+            } else if (isWhatsapp) {
+                sendAnalyticsEvent('whatsapp_landing_click', {
+                    cta_text: text,
+                    cta_href: href,
+                    cta_section: section,
+                    cta_origin: ctaOrigin
+                });
+            }
         });
     });
 

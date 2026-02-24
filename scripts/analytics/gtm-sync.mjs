@@ -24,6 +24,7 @@ const dlVariables = [
   { name: 'DLV - cta_href', key: 'cta_href' },
   { name: 'DLV - cta_section', key: 'cta_section' },
   { name: 'DLV - cta_type', key: 'cta_type' },
+  { name: 'DLV - cta_origin', key: 'cta_origin' },
   { name: 'DLV - video_id', key: 'video_id' },
   { name: 'DLV - video_context', key: 'video_context' }
 ];
@@ -171,6 +172,22 @@ async function main() {
     'trigger'
   );
 
+  const whatsappLandingTrigger = await upsertByName(
+    listTriggers,
+    createTrigger,
+    updateTrigger,
+    customEventTriggerBody('EV - whatsapp_landing_click', 'whatsapp_landing_click'),
+    'trigger'
+  );
+
+  const whatsappFloatingTrigger = await upsertByName(
+    listTriggers,
+    createTrigger,
+    updateTrigger,
+    customEventTriggerBody('EV - whatsapp_floating_click', 'whatsapp_floating_click'),
+    'trigger'
+  );
+
   const tagsNow = await listTags();
   let ga4Config = tagsNow.find((t) => t.name === 'GA4 - Config');
   if (!ga4Config) {
@@ -191,7 +208,8 @@ async function main() {
       { name: 'cta_text', value: '{{DLV - cta_text}}' },
       { name: 'cta_href', value: '{{DLV - cta_href}}' },
       { name: 'cta_section', value: '{{DLV - cta_section}}' },
-      { name: 'cta_type', value: '{{DLV - cta_type}}' }
+      { name: 'cta_type', value: '{{DLV - cta_type}}' },
+      { name: 'cta_origin', value: '{{DLV - cta_origin}}' }
     ]),
     'tag'
   );
@@ -203,6 +221,32 @@ async function main() {
     ga4EventTagBody('GA4 - Event - video_open', 'video_open', videoTrigger?.triggerId || '', [
       { name: 'video_id', value: '{{DLV - video_id}}' },
       { name: 'video_context', value: '{{DLV - video_context}}' }
+    ]),
+    'tag'
+  );
+
+  await upsertByName(
+    listTags,
+    createTag,
+    updateTag,
+    ga4EventTagBody('GA4 - Event - whatsapp_landing_click', 'whatsapp_landing_click', whatsappLandingTrigger?.triggerId || '', [
+      { name: 'cta_text', value: '{{DLV - cta_text}}' },
+      { name: 'cta_href', value: '{{DLV - cta_href}}' },
+      { name: 'cta_section', value: '{{DLV - cta_section}}' },
+      { name: 'cta_origin', value: '{{DLV - cta_origin}}' }
+    ]),
+    'tag'
+  );
+
+  await upsertByName(
+    listTags,
+    createTag,
+    updateTag,
+    ga4EventTagBody('GA4 - Event - whatsapp_floating_click', 'whatsapp_floating_click', whatsappFloatingTrigger?.triggerId || '', [
+      { name: 'cta_text', value: '{{DLV - cta_text}}' },
+      { name: 'cta_href', value: '{{DLV - cta_href}}' },
+      { name: 'cta_section', value: '{{DLV - cta_section}}' },
+      { name: 'cta_origin', value: '{{DLV - cta_origin}}' }
     ]),
     'tag'
   );

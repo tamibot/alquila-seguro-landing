@@ -18,11 +18,12 @@ const customDimensions = [
   { displayName: 'CTA Href', parameterName: 'cta_href', description: 'URL del CTA clickeado', scope: 'EVENT' },
   { displayName: 'CTA Section', parameterName: 'cta_section', description: 'Seccion de la landing donde ocurre el click', scope: 'EVENT' },
   { displayName: 'CTA Type', parameterName: 'cta_type', description: 'Tipo de CTA (whatsapp/navigation)', scope: 'EVENT' },
+  { displayName: 'CTA Origin', parameterName: 'cta_origin', description: 'Origen del CTA (floating_whatsapp/landing_whatsapp/navigation)', scope: 'EVENT' },
   { displayName: 'Video Id', parameterName: 'video_id', description: 'ID de video abierto', scope: 'EVENT' },
   { displayName: 'Video Context', parameterName: 'video_context', description: 'Contexto del video abierto', scope: 'EVENT' }
 ];
 
-const conversionEvents = ['cta_click'];
+const conversionEvents = ['cta_click', 'whatsapp_landing_click', 'whatsapp_floating_click'];
 
 async function main() {
   const auth = new google.auth.GoogleAuth({ scopes: ['https://www.googleapis.com/auth/analytics.edit'] });
