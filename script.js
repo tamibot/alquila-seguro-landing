@@ -192,6 +192,16 @@ document.addEventListener('DOMContentLoaded', () => {
         window.dataLayer.push(payload);
     }
 
+    function sendAnalyticsEvent(eventName, params = {}) {
+        const payload = { event: eventName, ...params };
+        pushDataLayerEvent(payload);
+
+        // Direct GA4 delivery for immediate tracking, even before GTM event tags are configured.
+        if (typeof window.gtag === 'function') {
+            window.gtag('event', eventName, params);
+        }
+    }
+
     const ctaSelectors = [
         'a.btn',
         'a.learn-more',
@@ -206,8 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const text = (element.textContent || '').trim().replace(/\s+/g, ' ');
             const section = element.closest('section')?.id || 'header_or_footer';
 
-            pushDataLayerEvent({
-                event: 'cta_click',
+            sendAnalyticsEvent('cta_click', {
                 cta_text: text,
                 cta_href: href,
                 cta_section: section,
@@ -218,8 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (heroVideoTrigger) {
         heroVideoTrigger.addEventListener('click', () => {
-            pushDataLayerEvent({
-                event: 'video_open',
+            sendAnalyticsEvent('video_open', {
                 video_id: heroVideoTrigger.dataset.videoId || 'SNKy5ZK891A',
                 video_context: 'hero'
             });

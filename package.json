@@ -1,0 +1,17 @@
+{
+  "name": "alquila-seguro-landing",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Automation scripts for GA4/GTM analytics",
+  "type": "module",
+  "scripts": {
+    "analytics:gtm:dry": "node scripts/analytics/gtm-sync.mjs --dry-run",
+    "analytics:gtm:apply": "node scripts/analytics/gtm-sync.mjs --apply",
+    "analytics:ga4:dry": "node scripts/analytics/ga4-admin-sync.mjs --dry-run",
+    "analytics:ga4:apply": "node scripts/analytics/ga4-admin-sync.mjs --apply"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "googleapis": "^140.0.1"
+  }
+}
