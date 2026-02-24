@@ -142,6 +142,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoModalDialog = videoModal?.querySelector('.video-modal-dialog');
     const videoModalClose = document.getElementById('video-modal-close');
     const heroVideoIframe = document.getElementById('hero-video-iframe');
+    const testimonialIframes = document.querySelectorAll('.testimonial-iframe[data-video-id]');
+
+    function buildYouTubeEmbedUrl(videoId, autoplay = false) {
+        const safeOrigin = window.location.origin && window.location.origin !== 'null'
+            ? window.location.origin
+            : 'https://www.alquilaseguro.com.pe';
+
+        const params = new URLSearchParams({
+            rel: '0',
+            modestbranding: '1',
+            playsinline: '1',
+            enablejsapi: '1',
+            origin: safeOrigin
+        });
+
+        if (autoplay) {
+            params.set('autoplay', '1');
+        }
+
+        return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
+    }
 
     function closeVideoModal() {
         if (!videoModal || !heroVideoIframe) {
@@ -157,12 +178,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroVideoTrigger && videoModal && heroVideoIframe) {
         heroVideoTrigger.addEventListener('click', () => {
             const videoId = heroVideoTrigger.dataset.videoId || 'SNKy5ZK891A';
-            heroVideoIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+            heroVideoIframe.src = buildYouTubeEmbedUrl(videoId, true);
             videoModal.classList.add('active');
             videoModal.setAttribute('aria-hidden', 'false');
             document.body.classList.add('modal-open');
         });
     }
+
+    testimonialIframes.forEach((iframe) => {
+        const videoId = iframe.dataset.videoId;
+        if (!videoId) {
+            return;
+        }
+        iframe.src = buildYouTubeEmbedUrl(videoId, false);
+    });
 
     if (videoModalClose) {
         videoModalClose.addEventListener('click', closeVideoModal);
