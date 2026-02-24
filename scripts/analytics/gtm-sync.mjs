@@ -1,5 +1,8 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
 import { google } from 'googleapis';
+
+dotenv.config({ path: '.env.local' });
+dotenv.config();
 
 const APPLY = process.argv.includes('--apply');
 const DRY = process.argv.includes('--dry-run') || !APPLY;
@@ -76,7 +79,7 @@ function ga4EventTagBody(name, eventName, triggerId, extraParams = []) {
     name,
     type: 'gaawe',
     parameter: [
-      { type: 'template', key: 'measurementId', value: measurementId },
+      { type: 'template', key: 'measurementIdOverride', value: measurementId },
       { type: 'template', key: 'eventName', value: eventName },
       { type: 'list', key: 'eventParameters', list: eventParameters }
     ],

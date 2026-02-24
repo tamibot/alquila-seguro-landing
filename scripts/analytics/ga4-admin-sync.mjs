@@ -1,5 +1,8 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
 import { google } from 'googleapis';
+
+dotenv.config({ path: '.env.local' });
+dotenv.config();
 
 const APPLY = process.argv.includes('--apply');
 const DRY = process.argv.includes('--dry-run') || !APPLY;
