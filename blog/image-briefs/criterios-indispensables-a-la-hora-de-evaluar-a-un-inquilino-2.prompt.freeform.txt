@@ -1,0 +1,66 @@
+Goal:
+Create a premium editorial infographic cover for this specific blog article (not generic), final image 1200x630.
+
+Editorial intent:
+- Build a coherent visual story from the article sections, with practical and business-oriented real-estate tone.
+- Prioritize information architecture, readability and clean spacing over decorative effects.
+
+Article context:
+- Title: Criterios indispensables a la hora de evaluar a un inquilino
+- Summary intent: Versión actualizada 2026 para propietarios en Perú: cómo evaluar
+- Keywords: riesgo, morosidad, inquilino, evaluacion, resumen rápido, enfoque 2026 para evaluar, reglas del inmueble y, solvencia financiera y
+- Core ideas extracted from article:
+- Primero reglas: uso del inmueble y convivencia deben estar aceptados por escrito
+- Luego solvencia: ingreso, deudas y estabilidad laboral se validan con documentos
+- Después comportamiento: historial de pago, referencias y antecedentes con contexto
+- Decisión final: matriz de puntaje + checklist de respaldo
+- Capa legal-operativa: reglas del inmueble y uso permitido
+- Capa financiera: capacidad de pago y carga de deuda
+- Capa conductual: historial, referencias y antecedentes relevantes
+- Uso residencial y restricciones de actividad
+
+Infographic content map (must be represented):
+1) Main theme block:
+- Badge: RIESGO | MOROSIDAD
+- Headline focus: Control de morosidad / para proteger tu renta
+- Subtitle focus: Señales clave para reducir riesgo
+
+2) Quick checklist block:
+- Title: Resumen rápido
+- Renta 5% en proforma
+- Predial y arbitrios
+- Mantenimiento anual
+- Flujo neto mensual
+
+3) KPI/metric chips:
+- 30%
+- Predial + arbitrios
+- Flujo neto mensual
+
+4) Three practical modules:
+- Enfoque 2026 para evaluar: Primero reglas: uso del inmueble y
+- Reglas del inmueble y: Luego solvencia: ingreso, deudas y
+- Solvencia financiera y capacidad: Después comportamiento: historial de pago
+
+Visual system constraints:
+- Palette only: #0b3f67, #0f5b8f, #1d7bb6, #d8ecfb, #f6fbff.
+- Professional corporate style, realistic editorial infographic.
+- No purple/fuchsia/neon colors, no cartoon style.
+- Use iconography + mini charts/cards/flows to make the image genuinely informative.
+- Create 4 to 6 visual modules total (not just title + one box).
+
+Text constraints (critical):
+- Spanish only.
+- No overlapping text. No cropped text. No cut words.
+- Avoid long paragraphs: labels and short phrases only.
+- Max 2 lines for headline, max 1 line subtitle, short card labels.
+- Keep all text inside safe margins (min 48px from edges).
+- Never place text over high-noise backgrounds.
+
+Quality threshold:
+- Must look publish-ready for social share and blog hero.
+- Must clearly communicate this article's topic: costos de entrada, costos mensuales, vacancia/rotación y flujo neto.
+- Not a generic real-estate banner.
+
+Output:
+- Single PNG 1200x630, sharp, balanced hierarchy, high readability.

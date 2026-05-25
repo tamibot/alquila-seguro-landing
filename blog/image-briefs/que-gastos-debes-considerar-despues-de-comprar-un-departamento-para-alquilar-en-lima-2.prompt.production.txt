@@ -1,0 +1,32 @@
+Goal:
+Generate ONLY a background/base image for a blog hero (1200x630) about this article.
+The final text will be added in post-processing, so this image must contain NO readable text.
+
+Article context:
+- Title: ¿Qué gastos debes considerar después de comprar un departamento para alquilar en Lima?
+- Meta: Guía completa de gastos después de comprar un depa
+- Theme keywords: inversion, gastos, impuestos, arbitrios, flujo de caja, resumen rápido, impuesto a la renta, arbitrios municipales e
+- Core concepts:
+- Una proforma útil para esta etapa debe incluir: impuesto 5%, predial
+- Una gestión profesional permite anticipar, ordenar y controlar: desde el
+- Con proforma en escenarios, reserva de contingencia y control mensual de
+- Dependiendo del contrato, puede asumirlo el inquilino, pero debe quedar
+- La rentabilidad de un alquiler no depende solo de cuánto cobras
+- La planificación de flujo de caja te permite anticipar tensión financiera
+
+Required composition:
+1) Left text-safe area (empty enough for a large title).
+2) Right top panel area (empty/light panel shape for checklist block).
+3) Bottom row with 3 infographic cards (icon placeholders and visual modules only).
+4) Subtle grid background, blue corporate palette.
+5) Visual motifs tied to article concepts (e.g., taxes, municipal fees, maintenance, cash flow).
+
+Hard constraints:
+- Do NOT render readable letters, words, or numbers.
+- Do NOT crop key visual modules.
+- Do NOT create clutter behind the left title-safe zone.
+- Keep professional corporate style (no neon, no purple/fuchsia).
+- High contrast and clean spacing.
+
+Output:
+- PNG, 1200x630, editorial infographic base, text-safe.

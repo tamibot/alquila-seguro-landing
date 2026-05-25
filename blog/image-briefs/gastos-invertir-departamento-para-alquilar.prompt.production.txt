@@ -1,0 +1,32 @@
+Goal:
+Generate ONLY a background/base image for a blog hero (1200x630) about this article.
+The final text will be added in post-processing, so this image must contain NO readable text.
+
+Article context:
+- Title: Gastos a tener en cuenta al invertir en un departamento para alquilar
+- Meta: Lista completa de gastos al invertir en un departamento
+- Theme keywords: inversion, gastos, proforma, flujo caja, vacancia, resumen rápido, idea clave: no es, método en 3 pasos
+- Core concepts:
+- Método en 3 pasos: hablar con administrador, inversionistas y empresas de servicios
+- Proforma completa: separar gastos fijos, variables y costos de cierre
+- Riesgo operativo: vacancia, corretaje y mantenimiento correctivo son los rubros más subestimados
+- Checklist integral: 17 rubros para validar si el alquiler deja flujo neto positivo
+- Agua, alcantarillado o gas (según contrato)
+- Electricidad en periodos sin ocupación
+
+Required composition:
+1) Left text-safe area (empty enough for a large title).
+2) Right top panel area (empty/light panel shape for checklist block).
+3) Bottom row with 3 infographic cards (icon placeholders and visual modules only).
+4) Subtle grid background, blue corporate palette.
+5) Visual motifs tied to article concepts (e.g., taxes, municipal fees, maintenance, cash flow).
+
+Hard constraints:
+- Do NOT render readable letters, words, or numbers.
+- Do NOT crop key visual modules.
+- Do NOT create clutter behind the left title-safe zone.
+- Keep professional corporate style (no neon, no purple/fuchsia).
+- High contrast and clean spacing.
+
+Output:
+- PNG, 1200x630, editorial infographic base, text-safe.

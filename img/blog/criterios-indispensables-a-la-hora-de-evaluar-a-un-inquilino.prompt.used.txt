@@ -1,0 +1,31 @@
+Crea una imagen horizontal 1200x630 para portada de blog.
+Tema: Criterios indispensables a la hora de evaluar a un inquilino.
+Estética: corporativa, limpia, profesional, tonos azules y blancos.
+
+IMPORTANTE DE COMPOSICIÓN:
+- Deja un margen vacío de seguridad de 120 px en todos los bordes.
+- NO pongas barras, franjas, paneles ni formas en el borde izquierdo.
+- Todo el texto debe quedar completamente dentro del área segura.
+- No recortar ni truncar texto.
+
+Texto exacto:
+Título: "Criterios indispensables para evaluar a un inquilino"
+Subtítulo: "Filtro financiero, documental y de convivencia"
+Checklist:
+- "Reglas claras del inmueble"
+- "Capacidad de pago verificable"
+- "Historial de pago y referencias"
+- "Validación de antecedentes"
+
+Layout:
+- Título y subtítulo en la mitad izquierda.
+- Checklist en tarjeta clara a la derecha.
+- Tres íconos en la zona inferior (documento, escudo check, gráfico).
+
+Restricciones:
+- Sin textos extra.
+- Sin superposición.
+- Alta legibilidad en móvil.
+
+Revision fixes (must apply):
+Update the checklist text to exactly match 'Control de vacancia, Flujo neto mensual, Seguimiento de cobranza, Filtro del inquilino'. Change the subtitle to 'Señales clave para reducir riesgo'. Use a consistent blue corporate color palette with varied shades to enhance hierarchy and ensure all text is fully aligned with the article's themes about tenant evaluation criteria. Replace or reposition icons to better represent the checklist concepts in a professional infographic style.

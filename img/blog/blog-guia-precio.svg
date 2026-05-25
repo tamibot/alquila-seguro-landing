@@ -1,0 +1,41 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1080" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF4FF"/>
+      <stop offset="1" stop-color="#DCEEFF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2C7BE5"/>
+      <stop offset="1" stop-color="#0C4FA2"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="40" y="30" width="1120" height="700" rx="40" fill="url(#bg)"/>
+  <rect x="160" y="100" width="580" height="560" rx="30" fill="#FFFFFF"/>
+  <rect x="220" y="170" width="360" height="26" rx="11" fill="#E4EFFD"/>
+  <rect x="220" y="214" width="240" height="18" rx="9" fill="#EDF4FF"/>
+
+  <g transform="translate(220 280)">
+    <circle cx="18" cy="18" r="18" fill="#1C70D0"/>
+    <path d="M10 18L16 24L27 12" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="52" y="8" width="430" height="20" rx="10" fill="#D9EAFE"/>
+  </g>
+  <g transform="translate(220 342)">
+    <circle cx="18" cy="18" r="18" fill="#1C70D0"/>
+    <path d="M10 18L16 24L27 12" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="52" y="8" width="390" height="20" rx="10" fill="#D9EAFE"/>
+  </g>
+  <g transform="translate(220 404)">
+    <circle cx="18" cy="18" r="18" fill="#1C70D0"/>
+    <path d="M10 18L16 24L27 12" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="52" y="8" width="350" height="20" rx="10" fill="#D9EAFE"/>
+  </g>
+
+  <rect x="760" y="170" width="280" height="420" rx="28" fill="#0B3A60"/>
+  <rect x="795" y="224" width="210" height="130" rx="18" fill="#124E80"/>
+  <text x="817" y="300" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800">S/ 2,950</text>
+  <rect x="795" y="376" width="210" height="78" rx="16" fill="url(#accent)"/>
+  <text x="838" y="424" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Precio ideal</text>
+  <rect x="795" y="478" width="210" height="22" rx="10" fill="#4A82B6"/>
+  <rect x="795" y="514" width="172" height="18" rx="9" fill="#4A82B6"/>
+</svg>

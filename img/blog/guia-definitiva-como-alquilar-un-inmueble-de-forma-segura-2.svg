@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Guía Definitiva: ¿Cómo alquilar un inmueble de forma segura?</title>
+  <desc id="desc">Portada del artículo Guía Definitiva: ¿Cómo alquilar un inmueble de forma segura?</desc>
+  <defs>
+    <linearGradient id="bg-196171768" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(214,58%,26%)"/>
+      <stop offset="100%" stop-color="hsl(222,62%,45%)"/>
+    </linearGradient>
+    <pattern id="dots-196171768" width="48" height="48" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="1.6" fill="rgba(255,255,255,.18)"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-196171768)"/>
+  <rect width="1200" height="630" fill="url(#dots-196171768)"/>
+  <path d="M0 520L300 380L560 630H0z" fill="rgba(255,255,255,.08)"/><path d="M850 0l350 210v420L740 200z" fill="rgba(255,255,255,.07)"/>
+  <rect x="74" y="70" rx="999" ry="999" width="280" height="44" fill="rgba(255,255,255,.18)"/>
+  <text x="214" y="98" text-anchor="middle" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="1">GUÍA</text>
+  <text x="74" y="250" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="56" font-weight="820">Guía Definitiva: ¿Cómo</text>
+  <text x="74" y="318" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="56" font-weight="560">alquilar un inmueble de</text>
+  <text x="74" y="386" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="56" font-weight="560">forma segura?</text>
+  <g transform="translate(838,218)" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="238" height="220" rx="26"/>
+    <path d="M52 172V74l60-36 60 36v98"/><path d="M112 172v-34"/><path d="M82 106h16"/><path d="M126 106h16"/><path d="M82 134h16"/><path d="M126 134h16"/>
+  </g>
+</svg>

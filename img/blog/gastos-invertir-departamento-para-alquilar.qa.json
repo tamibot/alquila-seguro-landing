@@ -1,0 +1,10 @@
+{
+  "output": "/Users/macbookair/Desktop/Antigratity-google/alquila-seguro-landing/img/blog/gastos-invertir-departamento-para-alquilar.png",
+  "provider": "openai",
+  "model": "gpt-image-1",
+  "pipeline": "ai-freeform-infographic",
+  "prompt_file": "/Users/macbookair/Desktop/Antigratity-google/alquila-seguro-landing/blog/image-briefs/gastos-invertir-departamento-para-alquilar.prompt.freeform.txt",
+  "no_fallback": false,
+  "qa_pass": true,
+  "qa_issues": []
+}

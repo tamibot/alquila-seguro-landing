@@ -1,0 +1,32 @@
+Goal:
+Generate ONLY a background/base image for a blog hero (1200x630) about this article.
+The final text will be added in post-processing, so this image must contain NO readable text.
+
+Article context:
+- Title: Criterios indispensables a la hora de evaluar a un inquilino
+- Meta: Versión actualizada 2026 para propietarios en Perú: cómo evaluar
+- Theme keywords: riesgo, morosidad, inquilino, evaluacion, resumen rápido, enfoque 2026 para evaluar, reglas del inmueble y, solvencia financiera y
+- Core concepts:
+- Primero reglas: uso del inmueble y convivencia deben estar aceptados por escrito
+- Luego solvencia: ingreso, deudas y estabilidad laboral se validan con documentos
+- Después comportamiento: historial de pago, referencias y antecedentes con contexto
+- Decisión final: matriz de puntaje + checklist de respaldo
+- Capa legal-operativa: reglas del inmueble y uso permitido
+- Capa financiera: capacidad de pago y carga de deuda
+
+Required composition:
+1) Left text-safe area (empty enough for a large title).
+2) Right top panel area (empty/light panel shape for checklist block).
+3) Bottom row with 3 infographic cards (icon placeholders and visual modules only).
+4) Subtle grid background, blue corporate palette.
+5) Visual motifs tied to article concepts (e.g., taxes, municipal fees, maintenance, cash flow).
+
+Hard constraints:
+- Do NOT render readable letters, words, or numbers.
+- Do NOT crop key visual modules.
+- Do NOT create clutter behind the left title-safe zone.
+- Keep professional corporate style (no neon, no purple/fuchsia).
+- High contrast and clean spacing.
+
+Output:
+- PNG, 1200x630, editorial infographic base, text-safe.

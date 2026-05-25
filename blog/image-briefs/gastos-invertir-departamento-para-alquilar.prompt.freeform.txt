@@ -1,0 +1,66 @@
+Goal:
+Create a premium editorial infographic cover for this specific blog article (not generic), final image 1200x630.
+
+Editorial intent:
+- Build a coherent visual story from the article sections, with practical and business-oriented real-estate tone.
+- Prioritize information architecture, readability and clean spacing over decorative effects.
+
+Article context:
+- Title: Gastos a tener en cuenta al invertir en un departamento para alquilar
+- Summary intent: Lista completa de gastos al invertir en un departamento
+- Keywords: inversion, gastos, proforma, flujo caja, vacancia, resumen rápido, idea clave: no es, método en 3 pasos
+- Core ideas extracted from article:
+- Método en 3 pasos: hablar con administrador, inversionistas y empresas de servicios
+- Proforma completa: separar gastos fijos, variables y costos de cierre
+- Riesgo operativo: vacancia, corretaje y mantenimiento correctivo son los rubros más subestimados
+- Checklist integral: 17 rubros para validar si el alquiler deja flujo neto positivo
+- Agua, alcantarillado o gas (según contrato)
+- Electricidad en periodos sin ocupación
+- Mantenimiento del edificio/condominio
+- Impuesto predial y arbitrios municipales
+
+Infographic content map (must be represented):
+1) Main theme block:
+- Badge: INVERSION | GASTOS
+- Headline focus: Gastos clave de alquiler / para propietarios
+- Subtitle focus: Impuestos, arbitrios y flujo neto
+
+2) Quick checklist block:
+- Title: Resumen rápido
+- Predial y arbitrios
+- Mantenimiento anual
+- Fondo de contingencia
+- Control de vacancia
+
+3) KPI/metric chips:
+- Predial + arbitrios
+- Flujo neto mensual
+- Renta 5%
+
+4) Three practical modules:
+- Costo total de entrada: Incluye cierre y alistamiento
+- Costos mensuales: Suma impuestos y mantenimiento
+- Rotación y vacancia: Modela vacancia y corretaje
+
+Visual system constraints:
+- Palette only: #0b3f67, #0f5b8f, #1d7bb6, #d8ecfb, #f6fbff.
+- Professional corporate style, realistic editorial infographic.
+- No purple/fuchsia/neon colors, no cartoon style.
+- Use iconography + mini charts/cards/flows to make the image genuinely informative.
+- Create 4 to 6 visual modules total (not just title + one box).
+
+Text constraints (critical):
+- Spanish only.
+- No overlapping text. No cropped text. No cut words.
+- Avoid long paragraphs: labels and short phrases only.
+- Max 2 lines for headline, max 1 line subtitle, short card labels.
+- Keep all text inside safe margins (min 48px from edges).
+- Never place text over high-noise backgrounds.
+
+Quality threshold:
+- Must look publish-ready for social share and blog hero.
+- Must clearly communicate this article's topic: costos de entrada, costos mensuales, vacancia/rotación y flujo neto.
+- Not a generic real-estate banner.
+
+Output:
+- Single PNG 1200x630, sharp, balanced hierarchy, high readability.

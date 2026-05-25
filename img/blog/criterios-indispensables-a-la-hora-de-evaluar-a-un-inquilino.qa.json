@@ -1,0 +1,15 @@
+{
+  "output": "/Users/macbookair/Desktop/Antigratity-google/alquila-seguro-landing/img/blog/criterios-indispensables-a-la-hora-de-evaluar-a-un-inquilino.png",
+  "provider": "openai",
+  "model": "gpt-image-1",
+  "pipeline": "ai-freeform-infographic",
+  "prompt_file": "/Users/macbookair/Desktop/Antigratity-google/alquila-seguro-landing/blog/image-briefs/criterios-indispensables-a-la-hora-de-evaluar-a-un-inquilino.prompt.final.txt",
+  "no_fallback": false,
+  "qa_pass": false,
+  "qa_issues": [
+    "The checklist content does not match the intended checklist text; it lists different items than 'Control de vacancia, Flujo neto mensual, Seguimiento de cobranza, Filtro del inquilino'.",
+    "The subtitle text 'Filtro financiero, documental y de convivencia' does not align with the intended subtitle 'Señales clave para reducir riesgo'.",
+    "The design uses a limited blue palette but could include more varied shades for stronger hierarchy.",
+    "The icons below the checklist do not clearly relate to the article content or checklist items."
+  ]
+}

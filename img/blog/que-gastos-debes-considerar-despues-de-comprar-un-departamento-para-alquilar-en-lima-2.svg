@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">¿Qué gastos debes considerar después de comprar un departamento para alquilar en Lima?</title>
+  <desc id="desc">Portada del blog con checklist de gastos post-compra para propietarios en Lima</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A3454"/>
+      <stop offset="100%" stop-color="#1B83D2"/>
+    </linearGradient>
+    <radialGradient id="soft" cx="0.86" cy="0.18" r="0.7">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.25)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="rgba(4,20,37,0.30)"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#soft)"/>
+
+  <rect x="68" y="60" width="250" height="44" rx="999" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.24)"/>
+  <text x="193" y="88" text-anchor="middle" fill="#fff" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1">ALQUILER EN LIMA</text>
+
+  <text x="68" y="196" fill="#fff" font-family="'Segoe UI', Arial, sans-serif" font-size="58" font-weight="820">Gastos post-compra</text>
+  <text x="68" y="266" fill="#fff" font-family="'Segoe UI', Arial, sans-serif" font-size="58" font-weight="820">para alquilar tu depa</text>
+  <text x="68" y="330" fill="#D4ECFF" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="500">Impuestos, arbitrios, mantenimiento y flujo neto</text>
+
+  <g transform="translate(760,150)" filter="url(#shadow)">
+    <rect x="0" y="0" width="370" height="340" rx="26" fill="#F2F8FF" stroke="rgba(12,74,112,0.18)"/>
+    <text x="28" y="50" fill="#0F4F78" font-family="'Segoe UI', Arial, sans-serif" font-size="27" font-weight="760">Checklist financiero</text>
+
+    <g fill="none" stroke="#0F5D90" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="28" y="78" width="24" height="24" rx="5"/><path d="M34 90l5 6 9-11"/>
+      <rect x="28" y="132" width="24" height="24" rx="5"/><path d="M34 144l5 6 9-11"/>
+      <rect x="28" y="186" width="24" height="24" rx="5"/><path d="M34 198l5 6 9-11"/>
+      <rect x="28" y="240" width="24" height="24" rx="5"/><path d="M34 252l5 6 9-11"/>
+    </g>
+
+    <text x="64" y="96" fill="#24516D" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="640">Renta 5%</text>
+    <text x="64" y="150" fill="#24516D" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="640">Predial y arbitrios</text>
+    <text x="64" y="204" fill="#24516D" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="640">Mantenimiento</text>
+    <text x="64" y="258" fill="#24516D" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="640">Contingencias</text>
+
+    <rect x="28" y="286" width="314" height="36" rx="10" fill="#D7EBFC"/>
+    <text x="185" y="310" text-anchor="middle" fill="#0D4F79" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700">Controla flujo neto mensual</text>
+  </g>
+</svg>

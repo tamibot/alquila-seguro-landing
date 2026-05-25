@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Infografía Morosidad de alquiler casi nula en Lima: el modelo Proper Rentas para propietarios que quieren alquilar su departamento sin riesgos</title>
+  <desc id="desc">Resumen visual para Morosidad de alquiler casi nula en Lima: el modelo Proper Rentas para propietarios que quieren alquilar su departamento sin riesgos</desc>
+  <defs>
+    <linearGradient id="head-1232143577" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(213,57%,30%)"/>
+      <stop offset="100%" stop-color="hsl(221,62%,46%)"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="1152" height="632" rx="32" fill="#fff"/>
+  <rect x="24" y="24" width="1152" height="170" rx="32" fill="url(#head-1232143577)"/>
+  <text x="72" y="98" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="42" font-weight="760">Infografía de apoyo</text>
+  <text x="72" y="140" fill="rgba(255,255,255,.92)" font-family="'Segoe UI',Arial,sans-serif" font-size="25">Morosidad de alquiler casi nula en Lima: el modelo Proper Rentas para propietarios que quieren alquilar su departamento sin riesgos</text>
+  <g transform="translate(90,240)">
+      <circle cx="80" cy="80" r="54" fill="#e5f0fb"/><text x="80" y="88" text-anchor="middle" fill="#19405f" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="760">1</text>
+      <text x="160" y="72" fill="#173f5a" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="700">Filtro previo</text><text x="160" y="110" fill="#4b667a" font-family="'Segoe UI',Arial,sans-serif" font-size="22">financiero + documental</text>
+      <circle cx="80" cy="220" r="54" fill="#e5f0fb"/><text x="80" y="228" text-anchor="middle" fill="#19405f" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="760">2</text>
+      <text x="160" y="212" fill="#173f5a" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="700">Contrato</text><text x="160" y="250" fill="#4b667a" font-family="'Segoe UI',Arial,sans-serif" font-size="22">con reglas ejecutables</text>
+      <circle cx="80" cy="360" r="54" fill="#e5f0fb"/><text x="80" y="368" text-anchor="middle" fill="#19405f" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="760">3</text>
+      <text x="160" y="352" fill="#173f5a" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="700">Seguimiento</text><text x="160" y="390" fill="#4b667a" font-family="'Segoe UI',Arial,sans-serif" font-size="22">con alertas tempranas</text>
+    </g>
+</svg>

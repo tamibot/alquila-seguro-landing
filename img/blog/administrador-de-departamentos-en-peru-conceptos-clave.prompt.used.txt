@@ -1,0 +1,69 @@
+Goal:
+Create a premium editorial infographic cover for this specific blog article (not generic), final image 1200x630.
+
+Editorial intent:
+- Build a coherent visual story from the article sections, with practical and business-oriented real-estate tone.
+- Prioritize information architecture, readability and clean spacing over decorative effects.
+
+Article context:
+- Title: Administrador de departamentos en Perú versus un corredor inmobiliario
+- Summary intent: Conoce las diferencias entre un administrador de departamentos y
+- Keywords: gestion, administracion, propietarios, operacion, resumen rápido, diferencia esencial entre, qué cubre un corredor, qué cubre un administrador
+- Core ideas extracted from article:
+- Corredor inmobiliario: foco en comercialización, visitas, filtro inicial y cierre
+- Administrador: foco en operación mensual, cobranza, incidencias y continuidad del contrato
+- Riesgo del propietario: sube cuando no hay procesos de seguimiento ni trazabilidad
+- Decisión correcta: depende de si buscas solo arrendar o sostener una operación estable
+- Valorización referencial del inmueble para salida a mercado
+- Publicación en portales y coordinación de visitas
+- Filtro básico de interesados y recopilación de documentos
+- Soporte en negociación y cierre inicial del contrato
+
+Infographic content map (must be represented):
+1) Main theme block:
+- Badge: GESTION | ADMINISTRACION
+- Headline focus: Gestión profesional / para cobrar puntual
+- Subtitle focus: Filtro financiero y legal del inquilino
+
+2) Quick checklist block:
+- Title: Resumen rápido
+- Mantenimiento anual
+- Control de vacancia
+- Seguimiento de cobranza
+- Filtro del inquilino
+
+3) KPI/metric chips:
+- 12 meses
+- Renta 5%
+- Control mensual
+
+4) Three practical modules:
+- Costo total de entrada: Incluye cierre y alistamiento
+- Costos mensuales: Suma impuestos y mantenimiento
+- Rotación y vacancia: Modela vacancia y corretaje
+
+Visual system constraints:
+- Palette only: #0b3f67, #0f5b8f, #1d7bb6, #d8ecfb, #f6fbff.
+- Professional corporate style, realistic editorial infographic.
+- No purple/fuchsia/neon colors, no cartoon style.
+- Use iconography + mini charts/cards/flows to make the image genuinely informative.
+- Create 4 to 6 visual modules total (not just title + one box).
+
+Text constraints (critical):
+- Spanish only.
+- No overlapping text. No cropped text. No cut words.
+- Avoid long paragraphs: labels and short phrases only.
+- Max 2 lines for headline, max 1 line subtitle, short card labels.
+- Keep all text inside safe margins (min 48px from edges).
+- Never place text over high-noise backgrounds.
+
+Quality threshold:
+- Must look publish-ready for social share and blog hero.
+- Must clearly communicate this article's topic: costos de entrada, costos mensuales, vacancia/rotación y flujo neto.
+- Not a generic real-estate banner.
+
+Output:
+- Single PNG 1200x630, sharp, balanced hierarchy, high readability.
+
+Revision fixes (must apply):
+Redesign the hero image to visually emphasize the article's main topic, 'Administrador de departamentos en Perú versus un corredor inmobiliario,' with a clear and large title reflecting this. Maintain the subtitle 'Filtro financiero y legal del inquilino' but integrate it below the main title with appropriate hierarchy. Use a clean, professional infographic style with multiple shades of blue to reinforce a corporate palette. Structure the checklist clearly, ensuring no text overlap or crowding and keep all text fully visible. Enhance the content alignment to illustrate the comparison topic, possibly through an infographic or segmented layout. Improve text contrast and hierarchy to guide the reader's focus effectively.

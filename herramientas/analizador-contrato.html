@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analizador de contrato de alquiler | Herramientas AlquilaSeguro</title>
+  <meta name="description" content="Analiza cláusulas de contrato de alquiler y detecta riesgos frecuentes para propietarios.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-tool-context="contrato">
+  <header>
+    <div class="container nav">
+      <a href="../index.html" class="brand">AlquilaSeguro</a>
+      <nav class="nav-links">
+        <a href="../blog/index.html">Blog</a>
+        <a href="index.html">Herramientas</a>
+        <a href="../index.html#contacto" class="btn">Asesoría</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 style="font-size: clamp(2rem, 3.8vw, 3rem); margin-bottom: 8px;">Analizador de contrato de alquiler</h1>
+      <p class="lead">Pega extractos de tu contrato y obtén una revisión referencial de cláusulas críticas.</p>
+
+      <div class="calculator-shell">
+        <section class="panel">
+          <h2 style="font-size: 1.35rem; margin-bottom: 14px;">Texto del contrato</h2>
+          <form id="contract-form">
+            <div class="form-group">
+              <label for="contract-text">Pega aquí cláusulas o el resumen del contrato</label>
+              <textarea id="contract-text" rows="12" style="width:100%;border:1px solid rgba(11,34,52,.15);border-radius:12px;padding:12px 14px;font-size:1rem;" placeholder="Ejemplo: penalidad por retraso, plazo, garantía, causales de resolución..." required></textarea>
+            </div>
+            <button class="btn" type="submit" style="width: 100%;">Analizar contrato</button>
+          </form>
+        </section>
+
+        <aside class="panel">
+          <h2 style="font-size: 1.35rem; margin-bottom: 12px;">Resultado</h2>
+          <p class="result-range" id="contract-summary">Aún no analizamos el contrato.</p>
+          <ul class="result-list" id="contract-points">
+            <li>Verificaremos plazo y causales de resolución.</li>
+            <li>Revisaremos penalidades por mora y condiciones de pago.</li>
+            <li>Confirmaremos reglas de mantenimiento y entrega.</li>
+          </ul>
+          <a class="btn" id="contract-cta" href="https://wa.me/51912462976?text=Hola%2C%20quiero%20asesor%C3%ADa%20legal%20para%20mi%20contrato%20de%20alquiler" target="_blank" rel="noopener noreferrer">Quiero revisión profesional</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <script src="analizador-contrato.js" defer></script>
+</body>
+</html>

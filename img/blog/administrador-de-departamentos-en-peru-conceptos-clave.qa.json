@@ -1,0 +1,18 @@
+{
+  "output": "/Users/macbookair/Desktop/Antigratity-google/alquila-seguro-landing/img/blog/administrador-de-departamentos-en-peru-conceptos-clave.png",
+  "provider": "openai",
+  "model": "gpt-image-1",
+  "pipeline": "ai-freeform-infographic",
+  "prompt_file": "/Users/macbookair/Desktop/Antigratity-google/alquila-seguro-landing/blog/image-briefs/administrador-de-departamentos-en-peru-conceptos-clave.prompt.freeform.txt",
+  "no_fallback": false,
+  "qa_pass": false,
+  "qa_issues": [
+    "The main title 'Gestión profesional para cobrar puntual' does not match the article title 'Administrador de departamentos en Perú versus un corredor inmobiliario'.",
+    "The subtitle 'Filtro financiero y legal del inquilino' is correctly represented.",
+    "Checklist points match the checklist intent but are presented as 'Resumen Rápido' without clear hierarchy or separation.",
+    "The infographic style is somewhat realistic but could be more professional and polished.",
+    "Palette primarily blue but lacks variation in blue tones to strengthen a corporate palette feel.",
+    "Text hierarchy is moderate but could improve with better contrast or font size differentiation.",
+    "Content alignment is slightly off; the image focuses more on general property management rather than a comparison of two roles as per article title."
+  ]
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Infografía Gastos a tener en cuenta al invertir en un departamento para alquilar</title>
+  <desc id="desc">Resumen visual para Gastos a tener en cuenta al invertir en un departamento para alquilar</desc>
+  <defs>
+    <linearGradient id="head-972647653" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(201,57%,30%)"/>
+      <stop offset="100%" stop-color="hsl(219,62%,46%)"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="1152" height="632" rx="32" fill="#fff"/>
+  <rect x="24" y="24" width="1152" height="170" rx="32" fill="url(#head-972647653)"/>
+  <text x="72" y="98" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="42" font-weight="760">Infografía de apoyo</text>
+  <text x="72" y="140" fill="rgba(255,255,255,.92)" font-family="'Segoe UI',Arial,sans-serif" font-size="25">Gastos a tener en cuenta al invertir en un departamento para alquilar</text>
+  <g transform="translate(90,240)">
+      <circle cx="80" cy="80" r="54" fill="#e5f0fb"/><text x="80" y="88" text-anchor="middle" fill="#19405f" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="760">1</text>
+      <text x="160" y="72" fill="#173f5a" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="700">Costo neto</text><text x="160" y="110" fill="#4b667a" font-family="'Segoe UI',Arial,sans-serif" font-size="22">incluye impuestos y vacancia</text>
+      <circle cx="80" cy="220" r="54" fill="#e5f0fb"/><text x="80" y="228" text-anchor="middle" fill="#19405f" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="760">2</text>
+      <text x="160" y="212" fill="#173f5a" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="700">Proforma</text><text x="160" y="250" fill="#4b667a" font-family="'Segoe UI',Arial,sans-serif" font-size="22">con escenarios base y conservador</text>
+      <circle cx="80" cy="360" r="54" fill="#e5f0fb"/><text x="80" y="368" text-anchor="middle" fill="#19405f" font-family="'Segoe UI',Arial,sans-serif" font-size="22" font-weight="760">3</text>
+      <text x="160" y="352" fill="#173f5a" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="700">Caja mensual</text><text x="160" y="390" fill="#4b667a" font-family="'Segoe UI',Arial,sans-serif" font-size="22">con colchón de contingencia</text>
+    </g>
+</svg>

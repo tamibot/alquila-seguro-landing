@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Gastos a tener en cuenta al invertir en un departamento para alquilar</title>
+  <desc id="desc">Portada del artículo Gastos a tener en cuenta al invertir en un departamento para alquilar</desc>
+  <defs>
+    <linearGradient id="bg-338763257" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(215,58%,26%)"/>
+      <stop offset="100%" stop-color="hsl(223,62%,45%)"/>
+    </linearGradient>
+    <pattern id="dots-338763257" width="48" height="48" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="1.6" fill="rgba(255,255,255,.18)"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-338763257)"/>
+  <rect width="1200" height="630" fill="url(#dots-338763257)"/>
+  <rect x="0" y="0" width="420" height="630" fill="rgba(255,255,255,.08)"/><path d="M380 0l180 0-220 630H160z" fill="rgba(255,255,255,.06)"/>
+  <rect x="74" y="70" rx="999" ry="999" width="280" height="44" fill="rgba(255,255,255,.18)"/>
+  <text x="214" y="98" text-anchor="middle" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="1">INVERSIÓN</text>
+  <text x="74" y="250" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="56" font-weight="820">Gastos a tener en cuenta</text>
+  <text x="74" y="318" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="56" font-weight="560">al invertir en un</text>
+  <text x="74" y="386" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="56" font-weight="560">departamento para</text>
+  <g transform="translate(838,218)" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="238" height="220" rx="26"/>
+    <path d="M56 146h116"/><path d="M62 64h104v58H62z"/><path d="M76 92h76"/><path d="M76 112h44"/><circle cx="150" cy="146" r="22"/><path d="M150 132v28"/><path d="M138 140h24"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "output": "/Users/macbookair/Desktop/Antigratity-google/alquila-seguro-landing/img/blog/criterios-indispensables-a-la-hora-de-evaluar-a-un-inquilino-2.png",
+  "provider": "openai",
+  "model": "gpt-image-1",
+  "pipeline": "ai-freeform-infographic",
+  "prompt_file": "/Users/macbookair/Desktop/Antigratity-google/alquila-seguro-landing/blog/image-briefs/criterios-indispensables-a-la-hora-de-evaluar-a-un-inquilino-2.prompt.final.txt",
+  "no_fallback": false,
+  "qa_pass": false,
+  "qa_issues": [
+    "The main title 'Criterios indispensables para evaluar a un inquilino' is legible but visually overwhelming due to large size and heavy font weight, reducing hierarchy clarity.",
+    "The subtitle 'Matriz de riesgo 2026 para propietarios' is smaller and less emphasized, but it is disconnected in purpose from the requested subtitle intent 'Señales clave para reducir riesgo'.",
+    "The checklist present does not match the intended checklist content; it shows 'Capacidad de pago verificable, Historial de pago y referencias, Validación de antecedentes' instead of the intended 'Renta 5% en proforma, Predial y arbitrios, Mantenimiento anual, Flujo neto mensual'.",
+    "The right panel with checklist items is in a white box with icons, which is professional but the icons and text content do not align fully with the article's financial and risk evaluation checklist intent.",
+    "Color palette is predominantly blue and white, which is suitable and consistent with a corporate blue palette.",
+    "Text has no overlap or cropping and is fully readable.",
+    "Icons are simple line style and fit a professional infographic style, but they do not strongly reinforce the checklist content.",
+    "There is moderate hierarchy but could be improved by adjusting font weights and sizes to better separate title, subtitle, and checklist sections."
+  ]
+}

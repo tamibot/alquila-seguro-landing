@@ -1,0 +1,15 @@
+Crea una imagen relacionada para la entrada del blog:
+
+"Título: Gastos a tener en cuenta al invertir en un departamento para alquilar.
+
+Resumen clave del artículo:
+La rentabilidad debe evaluarse con renta neta, no con renta bruta. El análisis se divide en 3 bloques: (1) costo total de entrada, (2) costo mensual real, y (3) costo de rotación por vacancia y reposición de inquilino. El artículo destaca el impuesto a la renta de 5% sobre la renta mensual y recomienda trabajar con 2 cifras base: inversión total comprometida y flujo neto mensual esperado. También propone modelar la proforma en 3 escenarios (conservador, base y exigente) y controlar 5 KPIs: vacancia acumulada, cobro puntual, costo operativo mensual, desviación vs proforma y tiempo de recolocación. Con este enfoque se reduce la sobreestimación de rentabilidad y se mejora el control financiero del alquiler."
+
+Requisitos:
+- Usar tonos azules corporativos.
+- Todo texto debe ser claramente legible.
+- No debe haber textos sobrepuestos.
+- No debe haber palabras cortadas o fuera del marco.
+- Evitar ruido visual que dificulte lectura.
+- Formato final: 1200x630.
+- Idioma: español.

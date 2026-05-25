@@ -1,0 +1,22 @@
+Create a clean corporate background image for a real-estate infographic cover, PNG 1200x630.
+
+Theme:
+- Property rental investment in Lima.
+- Concepts: taxes, municipal fees, monthly costs, vacancy, cash flow.
+
+Hard requirements:
+- NO readable text, NO letters, NO numbers.
+- NO grid pattern.
+- NO clutter.
+- Leave large clean spaces for overlay content:
+  - Left upper area very clean for headline.
+  - Right upper area softly highlighted for checklist panel.
+  - Bottom band with subtle separation for 3 cards.
+- Keep everything elegant and professional.
+- Palette only: #0b3f67 #0f5b8f #1d7bb6 #d8ecfb #f6fbff.
+- Subtle abstract icons/shapes are allowed (house, chart bars, coins, checklist), but very soft and low-noise.
+
+Style:
+- Premium editorial infographic background.
+- High contrast, balanced lighting, modern corporate look.
+- Nothing touching borders.

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de alquiler | Herramientas AlquilaSeguro</title>
+  <meta name="description" content="Calcula cuánto cobrar por tu departamento con datos reales de mercado y guarda la consulta para seguimiento comercial.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="calc-page" data-tool-context="calculadora">
+  <header>
+    <div class="container nav">
+      <a href="../index.html" class="brand">AlquilaSeguro</a>
+      <nav class="nav-links">
+        <a href="../blog/index.html">Blog</a>
+        <a href="index.html">Herramientas</a>
+        <a href="../index.html" class="btn">Volver a landing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section calc-main">
+    <div class="container">
+      <div class="calc-hero">
+        <span class="kicker">Calculadora para propietarios</span>
+        <h1>Calcula cuánto cobrar por tu depa con datos reales</h1>
+        <p>
+          Estima tu alquiler ideal en minutos, comparando tu inmueble con propiedades similares
+          en Lima para salir al mercado con un precio competitivo.
+        </p>
+        <div class="calc-hero-tags" aria-label="Beneficios de la calculadora">
+          <span>Estimación en menos de 1 minuto</span>
+          <span>Dirección validada automáticamente</span>
+          <span>Comparables reales en Lima</span>
+        </div>
+      </div>
+
+      <section class="calc-wizard" aria-label="Calculadora de alquiler">
+        <ol class="calc-steps" id="calc-steps">
+          <li data-step-indicator="1" class="is-active"><span>1</span>Datos del inmueble</li>
+          <li data-step-indicator="2"><span>2</span>Resultado</li>
+          <li data-step-indicator="3"><span>3</span>Datos del propietario</li>
+          <li data-step-indicator="4"><span>4</span>Confirmación</li>
+        </ol>
+
+        <section class="calc-card calc-step is-active" data-step="1" aria-labelledby="calc-step-title-1">
+          <h2 id="calc-step-title-1">Datos para calcular alquiler</h2>
+          <p class="calc-muted">Completa estos datos para consultar el valor estimado con inmuebles similares.</p>
+
+          <form id="calc-form-property" novalidate>
+            <div class="calc-grid two-col property-grid">
+              <label class="calc-field">
+                Dirección de tu inmueble
+                <input id="address" name="address" type="text" placeholder="Ej: Av. Arequipa 1234" required>
+                <span id="address-validation-status" class="calc-address-status" aria-live="polite">
+                  Escribe una dirección y te sugerimos ubicaciones en tiempo real.
+                </span>
+                <ul id="address-suggestions" class="calc-address-list" hidden></ul>
+              </label>
+
+              <label class="calc-field">
+                Distrito
+                <select id="district" name="district" required>
+                  <option value="Lince" selected>Lince</option>
+                  <option value="Miraflores">Miraflores</option>
+                  <option value="San Isidro">San Isidro</option>
+                  <option value="Santiago de Surco">Santiago de Surco</option>
+                  <option value="San Borja">San Borja</option>
+                  <option value="Barranco">Barranco</option>
+                  <option value="La Molina">La Molina</option>
+                  <option value="Jesús María">Jesús María</option>
+                  <option value="Magdalena del Mar">Magdalena del Mar</option>
+                  <option value="Pueblo Libre">Pueblo Libre</option>
+                  <option value="Surquillo">Surquillo</option>
+                  <option value="San Miguel">San Miguel</option>
+                </select>
+              </label>
+
+              <label class="calc-field">
+                Metraje (m²)
+                <input id="area" name="area" type="number" min="15" step="0.1" placeholder="Ej: 85" required>
+              </label>
+
+              <label class="calc-field">
+                Dormitorios
+                <select id="bedrooms" name="bedrooms" required>
+                  <option value="1">1</option>
+                  <option value="2" selected>2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5+</option>
+                </select>
+              </label>
+
+              <label class="calc-field">
+                Baños
+                <select id="bathrooms" name="bathrooms" required>
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4+</option>
+                </select>
+              </label>
+
+              <label class="calc-field">
+                ¿Está amoblado?
+                <select id="furnished" name="furnished" required>
+                  <option value="false" selected>No</option>
+                  <option value="true">Sí</option>
+                </select>
+              </label>
+
+              <label class="calc-field">
+                ¿Tiene cochera?
+                <select id="parking" name="parking" required>
+                  <option value="false" selected>No</option>
+                  <option value="true">Sí</option>
+                </select>
+              </label>
+
+              <label class="calc-field">
+                Rango de búsqueda
+                <select id="range" name="range" required>
+                  <option value="1" selected>1 km</option>
+                  <option value="2">2 km</option>
+                  <option value="3">3 km</option>
+                </select>
+              </label>
+            </div>
+
+            <input id="postal-code-hidden" name="postalCode" type="hidden">
+            <input id="latitude" name="latitude" type="hidden">
+            <input id="longitude" name="longitude" type="hidden">
+
+            <p id="calc-step1-error" class="calc-error" role="alert" hidden></p>
+
+            <div class="calc-actions">
+              <button id="calc-submit-property" class="btn" type="submit">Calcular ahora</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="calc-card calc-step" data-step="2" aria-labelledby="calc-step-title-2" hidden>
+          <h2 id="calc-step-title-2">Resultado de alquiler estimado</h2>
+
+          <div class="calc-metrics" id="calc-metrics">
+            <article>
+              <h3>Alquiler sugerido</h3>
+              <p id="calc-average">S/ --</p>
+            </article>
+            <article>
+              <h3>Inmuebles comparados</h3>
+              <p id="calc-comparables-count">--</p>
+            </article>
+            <article>
+              <h3>Rango aplicado</h3>
+              <p id="calc-range-applied">--</p>
+            </article>
+          </div>
+
+          <p id="calc-note" class="calc-note"></p>
+
+          <div class="calc-table-wrap">
+            <table class="calc-table" aria-label="Inmuebles de referencia">
+              <thead>
+                <tr>
+                  <th>Dirección</th>
+                  <th>Renta</th>
+                  <th>Dorm</th>
+                  <th>Baños</th>
+                  <th>Amoblado</th>
+                  <th>Cochera</th>
+                </tr>
+              </thead>
+              <tbody id="calc-comparables-body">
+                <tr>
+                  <td colspan="6">Aún no hay datos para mostrar.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="calc-grid two-col calc-margin-top">
+            <label class="calc-field">
+              Alquiler que deseas publicar (S/)
+              <input id="planned-rent" type="number" min="0" step="1" placeholder="Ej: 2300">
+            </label>
+            <label class="calc-field">
+              Recomendación
+              <input id="calc-recommendation" type="text" readonly>
+            </label>
+          </div>
+
+          <p id="calc-step2-error" class="calc-error" role="alert" hidden></p>
+
+          <div class="calc-actions between">
+            <button id="calc-back-to-step1" class="btn btn-ghost" type="button">Recalcular</button>
+            <button id="calc-continue-to-step3" class="btn" type="button">Continuar</button>
+          </div>
+        </section>
+
+        <section class="calc-card calc-step" data-step="3" aria-labelledby="calc-step-title-3" hidden>
+          <h2 id="calc-step-title-3">Datos del propietario para guardar consulta</h2>
+          <p class="calc-muted">
+            Esta información nos ayuda a enviarte una asesoría personalizada para alquilar rápido y seguro.
+          </p>
+
+          <form id="calc-form-client" novalidate>
+            <div class="calc-grid two-col">
+              <label class="calc-field">
+                Tipo de documento
+                <select id="doc-type" name="docType">
+                  <option value="DNI" selected>DNI</option>
+                  <option value="CE">Carnet de extranjería</option>
+                  <option value="PAS">Pasaporte</option>
+                </select>
+              </label>
+
+              <label class="calc-field">
+                Número de documento
+                <input id="doc-number" name="docNumber" type="text" placeholder="Ej: 12345678" required>
+              </label>
+
+              <label class="calc-field">
+                Nombres
+                <input id="first-name" name="firstName" type="text" placeholder="Ej: Juan Carlos" required>
+              </label>
+
+              <label class="calc-field">
+                Apellido paterno
+                <input id="last-name-father" name="lastNameFather" type="text" placeholder="Ej: Pérez" required>
+              </label>
+
+              <label class="calc-field">
+                Apellido materno
+                <input id="last-name-mother" name="lastNameMother" type="text" placeholder="Ej: Gómez" required>
+              </label>
+
+              <label class="calc-field">
+                Correo
+                <input id="email" name="email" type="email" placeholder="Ej: nombre@correo.com" required>
+              </label>
+
+              <label class="calc-field">
+                Teléfono
+                <input id="phone" name="phone" type="tel" placeholder="Ej: +51912345678" required>
+              </label>
+            </div>
+
+            <label class="calc-check">
+              <input id="accept-data" type="checkbox" required>
+              <span>Acepto el tratamiento de datos para recibir asesoría sobre alquiler.</span>
+            </label>
+
+            <p id="calc-step3-error" class="calc-error" role="alert" hidden></p>
+
+            <div class="calc-actions between">
+              <button id="calc-back-to-step2" class="btn btn-ghost" type="button">Volver</button>
+              <button id="calc-save-client" class="btn" type="submit">Guardar y finalizar</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="calc-card calc-step" data-step="4" aria-labelledby="calc-step-title-4" hidden>
+          <h2 id="calc-step-title-4">Consulta registrada correctamente</h2>
+          <p id="calc-success-summary" class="calc-muted"></p>
+          <div class="calc-actions">
+            <a id="calc-whatsapp-link" class="btn" target="_blank" rel="noopener noreferrer" href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20calculadora%20de%20AlquilaSeguro%20y%20quiero%20continuar%20con%20mi%20alquiler.">
+              Contactar por WhatsApp
+            </a>
+            <button id="calc-start-again" class="btn btn-ghost" type="button">Nueva consulta</button>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <script src="calculadora-config.local.js"></script>
+  <script src="calculadora.js?v=20260224-04" defer></script>
+</body>
+</html>

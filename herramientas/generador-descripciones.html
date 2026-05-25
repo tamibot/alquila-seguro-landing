@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de descripción para alquiler | Herramientas AlquilaSeguro</title>
+  <meta name="description" content="Genera descripciones atractivas para publicar tu propiedad en portales de alquiler.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-tool-context="descripciones">
+  <header>
+    <div class="container nav">
+      <a href="../index.html" class="brand">AlquilaSeguro</a>
+      <nav class="nav-links">
+        <a href="../blog/index.html">Blog</a>
+        <a href="index.html">Herramientas</a>
+        <a href="../index.html#contacto" class="btn">Asesoría</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 style="font-size: clamp(2rem, 3.8vw, 3rem); margin-bottom: 8px;">Generador de descripción para portales</h1>
+      <p class="lead">Crea textos listos para publicar y atraer mejores inquilinos para tu depa.</p>
+
+      <div class="calculator-shell">
+        <section class="panel">
+          <h2 style="font-size: 1.35rem; margin-bottom: 14px;">Datos de la propiedad</h2>
+          <form id="copy-form">
+            <div class="form-group"><label for="district">Distrito</label><input id="district" required placeholder="Ejemplo: Miraflores"></div>
+            <div class="form-group"><label for="type">Tipo de inmueble</label><input id="type" required placeholder="Ejemplo: departamento"></div>
+            <div class="form-group"><label for="size">Metraje</label><input id="size" required placeholder="Ejemplo: 85 m2"></div>
+            <div class="form-group"><label for="highlights">Atributos clave</label><input id="highlights" required placeholder="Ejemplo: cochera, balcón, cerca a parque"></div>
+            <button class="btn" type="submit" style="width:100%;">Generar descripción</button>
+          </form>
+        </section>
+
+        <aside class="panel">
+          <h2 style="font-size: 1.35rem; margin-bottom: 12px;">Descripción sugerida</h2>
+          <p class="result-range" id="copy-result">Completa el formulario para generar una descripción.</p>
+          <a class="btn" id="copy-cta" href="https://wa.me/51912462976?text=Hola%2C%20quiero%20ayuda%20para%20publicar%20mi%20propiedad%20en%20portales" target="_blank" rel="noopener noreferrer">Quiero optimizar mi publicación</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <script src="generador-descripciones.js" defer></script>
+</body>
+</html>

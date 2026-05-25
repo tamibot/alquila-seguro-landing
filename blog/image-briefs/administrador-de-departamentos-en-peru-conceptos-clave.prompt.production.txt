@@ -1,0 +1,32 @@
+Goal:
+Generate ONLY a background/base image for a blog hero (1200x630) about this article.
+The final text will be added in post-processing, so this image must contain NO readable text.
+
+Article context:
+- Title: Administrador de departamentos en Perú versus un corredor inmobiliario
+- Meta: Conoce las diferencias entre un administrador de departamentos y
+- Theme keywords: gestion, administracion, propietarios, operacion, resumen rápido, diferencia esencial entre, qué cubre un corredor, qué cubre un administrador
+- Core concepts:
+- Corredor inmobiliario: foco en comercialización, visitas, filtro inicial y cierre
+- Administrador: foco en operación mensual, cobranza, incidencias y continuidad del contrato
+- Riesgo del propietario: sube cuando no hay procesos de seguimiento ni trazabilidad
+- Decisión correcta: depende de si buscas solo arrendar o sostener una operación estable
+- Valorización referencial del inmueble para salida a mercado
+- Publicación en portales y coordinación de visitas
+
+Required composition:
+1) Left text-safe area (empty enough for a large title).
+2) Right top panel area (empty/light panel shape for checklist block).
+3) Bottom row with 3 infographic cards (icon placeholders and visual modules only).
+4) Subtle grid background, blue corporate palette.
+5) Visual motifs tied to article concepts (e.g., taxes, municipal fees, maintenance, cash flow).
+
+Hard constraints:
+- Do NOT render readable letters, words, or numbers.
+- Do NOT crop key visual modules.
+- Do NOT create clutter behind the left title-safe zone.
+- Keep professional corporate style (no neon, no purple/fuchsia).
+- High contrast and clean spacing.
+
+Output:
+- PNG, 1200x630, editorial infographic base, text-safe.

@@ -1,0 +1,32 @@
+Goal:
+Generate ONLY a background/base image for a blog hero (1200x630) about this article.
+The final text will be added in post-processing, so this image must contain NO readable text.
+
+Article context:
+- Title: Criterios indispensables a la hora de evaluar a un inquilino
+- Meta: Guía para propietarios: criterios indispensables para evaluar inquilinos
+- Theme keywords: riesgo, morosidad, inquilino, evaluacion, resumen rápido, ¿por qué es clave, cumplimiento de requisitos, capacidad financiera para
+- Core concepts:
+- Reglas claras: define requisitos de convivencia y uso del inmueble por escrito
+- Capacidad de pago: valida ingresos y carga financiera real del postulante
+- Historial: revisa comportamiento de pago y referencias verificables
+- Decisión con evidencia: documenta hallazgos y aplica criterios uniformes
+- Entrega requisitos por escrito junto con condiciones económicas
+- Pide conformidad explícita antes de avanzar a evaluación financiera
+
+Required composition:
+1) Left text-safe area (empty enough for a large title).
+2) Right top panel area (empty/light panel shape for checklist block).
+3) Bottom row with 3 infographic cards (icon placeholders and visual modules only).
+4) Subtle grid background, blue corporate palette.
+5) Visual motifs tied to article concepts (e.g., taxes, municipal fees, maintenance, cash flow).
+
+Hard constraints:
+- Do NOT render readable letters, words, or numbers.
+- Do NOT crop key visual modules.
+- Do NOT create clutter behind the left title-safe zone.
+- Keep professional corporate style (no neon, no purple/fuchsia).
+- High contrast and clean spacing.
+
+Output:
+- PNG, 1200x630, editorial infographic base, text-safe.

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Gastos a tener en cuenta al invertir en un departamento para alquilar</title>
+  <desc id="desc">Portada visual de análisis de costos para inversión inmobiliaria en alquiler</desc>
+  <defs>
+    <linearGradient id="bgMain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A3454"/>
+      <stop offset="55%" stop-color="#0E5D92"/>
+      <stop offset="100%" stop-color="#1D86D6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.22" r="0.7">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.30)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#69B7FF"/>
+      <stop offset="100%" stop-color="#B5DDFF"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EAF4FF"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="rgba(5,25,45,0.30)"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgMain)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <circle cx="1030" cy="120" r="210" fill="rgba(255,255,255,0.10)"/>
+  <circle cx="970" cy="560" r="170" fill="rgba(255,255,255,0.08)"/>
+
+  <rect x="68" y="62" rx="999" ry="999" width="235" height="44" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.24)"/>
+  <text x="186" y="91" text-anchor="middle" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.2">INVERSION INMOBILIARIA</text>
+
+  <text x="68" y="192" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="62" font-weight="820">Gastos clave para</text>
+  <text x="68" y="264" fill="#FFFFFF" font-family="'Segoe UI', Arial, sans-serif" font-size="62" font-weight="820">invertir y alquilar</text>
+  <text x="68" y="336" fill="#CFE9FF" font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="500">Proforma, costos de cierre, vacancia y flujo neto real</text>
+
+  <g transform="translate(66,398)">
+    <rect x="0" y="0" width="165" height="52" rx="14" fill="url(#chip)"/>
+    <text x="82" y="33" text-anchor="middle" fill="#093E64" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="760">Proforma</text>
+    <rect x="177" y="0" width="165" height="52" rx="14" fill="url(#chip)"/>
+    <text x="259" y="33" text-anchor="middle" fill="#093E64" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="760">Vacancia</text>
+    <rect x="354" y="0" width="200" height="52" rx="14" fill="url(#chip)"/>
+    <text x="454" y="33" text-anchor="middle" fill="#093E64" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="760">Flujo neto</text>
+  </g>
+
+  <g transform="translate(780,165)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="350" height="330" rx="28" fill="url(#card)" stroke="rgba(9,58,93,0.18)"/>
+    <text x="30" y="52" fill="#0E4E79" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="700">Checklist financiero</text>
+
+    <g transform="translate(30,88)" fill="none" stroke="#0E5B8F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0" y="0" width="24" height="24" rx="5"/><path d="M6 13l5 5 8-10"/>
+      <rect x="0" y="54" width="24" height="24" rx="5"/><path d="M6 67l5 5 8-10"/>
+      <rect x="0" y="108" width="24" height="24" rx="5"/><path d="M6 121l5 5 8-10"/>
+      <rect x="0" y="162" width="24" height="24" rx="5"/><path d="M6 175l5 5 8-10"/>
+    </g>
+
+    <text x="68" y="108" fill="#204B68" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600">Costos de entrada</text>
+    <text x="68" y="162" fill="#204B68" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600">Tributos y arbitrios</text>
+    <text x="68" y="216" fill="#204B68" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600">Mantenimiento</text>
+    <text x="68" y="270" fill="#204B68" font-family="'Segoe UI', Arial, sans-serif" font-size="21" font-weight="600">Contingencias</text>
+
+    <path d="M32 298H318" stroke="rgba(14,91,143,0.28)" stroke-width="2"/>
+    <text x="30" y="320" fill="#51728A" font-family="'Segoe UI', Arial, sans-serif" font-size="14">AlquilaSeguro Blog</text>
+  </g>
+</svg>

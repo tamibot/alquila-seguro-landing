@@ -1,0 +1,7 @@
+Generate a professional real-estate infographic background (1200x630, no text).
+Theme: Gastos a tener en cuenta al invertir en un departamento para alquilar
+Keywords: inversion, gastos, proforma, flujo caja, vacancia, resumen rápido, idea clave: no es, método en 3 pasos
+Use blue corporate palette and leave clear zones for:
+- Left headline block
+- Right checklist panel
+- Bottom 3 module cards

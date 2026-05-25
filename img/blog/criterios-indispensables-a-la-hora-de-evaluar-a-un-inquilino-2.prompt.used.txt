@@ -1,0 +1,28 @@
+Crea una portada de blog 1200x630, limpia y profesional, con paleta azul corporativa y fondo claro.
+
+Objetivo: ilustrar la entrada "Criterios indispensables a la hora de evaluar a un inquilino".
+
+Texto exacto obligatorio:
+Título: "Criterios indispensables para evaluar a un inquilino"
+Subtítulo: "Matriz de riesgo 2026 para propietarios"
+Checklist (4 líneas):
+- "Reglas claras del inmueble"
+- "Capacidad de pago verificable"
+- "Historial de pago y referencias"
+- "Validación de antecedentes"
+
+Composición:
+- Columna izquierda: título y subtítulo.
+- Columna derecha: una tarjeta blanca con el checklist.
+- Parte inferior: 3 íconos simples (documento, escudo-check, barras de análisis).
+- Márgenes internos amplios; nada de texto al borde.
+
+Restricciones:
+- No texto cortado.
+- No texto duplicado.
+- No agregar textos adicionales.
+- Alta legibilidad en móvil.
+- Estilo sobrio, editorial, ordenado.
+
+Revision fixes (must apply):
+Redesign the hero image to improve typographic hierarchy by balancing font sizes and weights, use the article's exact subtitle 'Señales clave para reducir riesgo' instead of the current one, replace the checklist text with the intended items: 'Renta 5% en proforma, Predial y arbitrios, Mantenimiento anual, Flujo neto mensual'. Adjust icons or visual elements to reflect financial and rental property evaluation themes clearly. Maintain the clean, corporate blue color palette and ensure strong contrast for readability. Keep the layout neat with no overlap or cropped text, and ensure the overall style remains realistic and professional.

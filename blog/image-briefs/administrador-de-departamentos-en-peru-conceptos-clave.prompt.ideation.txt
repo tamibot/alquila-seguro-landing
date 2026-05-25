@@ -1,0 +1,7 @@
+Generate a professional real-estate infographic background (1200x630, no text).
+Theme: Administrador de departamentos en Perú versus un corredor inmobiliario
+Keywords: gestion, administracion, propietarios, operacion, resumen rápido, diferencia esencial entre, qué cubre un corredor, qué cubre un administrador
+Use blue corporate palette and leave clear zones for:
+- Left headline block
+- Right checklist panel
+- Bottom 3 module cards

@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Scrollspy.
-    const sectionIds = ['inicio', 'servicios', 'proceso', 'testimonios', 'faq'];
+    const sectionIds = ['inicio', 'servicios', 'proceso', 'herramientas', 'testimonios', 'blog', 'faq'];
     const sectionElements = sectionIds
         .map((id) => document.getElementById(id))
         .filter(Boolean);

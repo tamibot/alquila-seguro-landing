@@ -1,0 +1,56 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="40" x2="1130" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF4FF"/>
+      <stop offset="1" stop-color="#DDEFFF"/>
+    </linearGradient>
+    <linearGradient id="card" x1="178" y1="134" x2="1018" y2="626" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FBFF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2C7BE5"/>
+      <stop offset="1" stop-color="#0E5BB8"/>
+    </linearGradient>
+    <filter id="shadow" x="90" y="80" width="1020" height="620" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#0D3762" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect x="40" y="30" width="1120" height="700" rx="40" fill="url(#bg)"/>
+  <circle cx="147" cy="130" r="62" fill="#CDE4FF"/>
+  <circle cx="1070" cy="640" r="90" fill="#C6E0FF"/>
+
+  <g filter="url(#shadow)">
+    <rect x="140" y="120" width="920" height="520" rx="32" fill="url(#card)"/>
+  </g>
+
+  <rect x="188" y="168" width="240" height="30" rx="12" fill="#E0EDFD"/>
+  <rect x="188" y="216" width="160" height="20" rx="10" fill="#EAF2FF"/>
+
+  <rect x="188" y="276" width="460" height="230" rx="24" fill="#F2F8FF"/>
+  <path d="M240 454L308 388L366 426L460 330L596 454" stroke="#2C7BE5" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="240" cy="454" r="10" fill="#2C7BE5"/>
+  <circle cx="308" cy="388" r="10" fill="#2C7BE5"/>
+  <circle cx="366" cy="426" r="10" fill="#2C7BE5"/>
+  <circle cx="460" cy="330" r="10" fill="#2C7BE5"/>
+  <circle cx="596" cy="454" r="10" fill="#2C7BE5"/>
+
+  <rect x="684" y="276" width="320" height="230" rx="24" fill="#F2F8FF"/>
+  <rect x="724" y="320" width="200" height="22" rx="11" fill="#DDEBFF"/>
+  <rect x="724" y="360" width="148" height="18" rx="9" fill="#E7F1FF"/>
+  <rect x="724" y="406" width="160" height="18" rx="9" fill="#E7F1FF"/>
+  <rect x="724" y="448" width="184" height="18" rx="9" fill="#E7F1FF"/>
+
+  <g transform="translate(790 540)">
+    <rect x="0" y="0" width="210" height="62" rx="20" fill="url(#accent)"/>
+    <circle cx="36" cy="31" r="12" fill="#FFFFFF"/>
+    <path d="M36 23V39M28 31H44" stroke="#2C7BE5" stroke-width="3" stroke-linecap="round"/>
+    <text x="62" y="38" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">Calcular precio</text>
+  </g>
+
+  <g transform="translate(206 550)">
+    <rect x="0" y="0" width="200" height="56" rx="18" fill="#0E4672"/>
+    <text x="26" y="36" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">S/ 2,780 - 3,050</text>
+  </g>
+</svg>

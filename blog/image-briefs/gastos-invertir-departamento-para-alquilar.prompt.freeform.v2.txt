@@ -1,0 +1,49 @@
+Goal:
+Create a premium editorial infographic cover for this specific blog article (not generic), final PNG 1200x630.
+
+Article:
+- Title: Gastos a tener en cuenta al invertir en un departamento para alquilar
+- Focus: costos de entrada, costos mensuales, rotación/vacancia, flujo neto mensual.
+
+Infographic narrative (must appear):
+1) Header block with:
+- Badge: INVERSION | GASTOS
+- Headline: Gastos clave de alquiler para propietarios
+- Subtitle: Impuestos, arbitrios y flujo neto
+
+2) KPI chips:
+- 5%
+- Predial + arbitrios
+- Flujo neto mensual
+
+3) Checklist card:
+- Renta 5% en proforma
+- Predial y arbitrios
+- Mantenimiento anual
+- Fondo de contingencia
+
+4) Three practical modules with icon + title + short subtitle:
+- Costo total de entrada / Incluye cierre y alistamiento
+- Costos mensuales / Suma impuestos y mantenimiento
+- Rotación y vacancia / Modela vacancia y corretaje
+
+Design constraints:
+- Palette only: #0b3f67, #0f5b8f, #1d7bb6, #d8ecfb, #f6fbff.
+- Professional editorial infographic, clean, modern, high contrast.
+- No neon, no purple, no cartoon style.
+
+Critical layout constraints:
+- SAFE AREA: place ALL text, cards and icons inside x=80..1120 and y=50..560.
+- NOTHING may touch or cross image borders.
+- Keep bottom margin clear: at least 70px after the lowest module content.
+- Avoid over-dense layouts; keep generous spacing between cards.
+
+Text constraints:
+- Spanish only.
+- Fully readable text.
+- No overlap, no truncation, no cropped words.
+- Short labels only; no long paragraphs.
+
+Quality bar:
+- Must look like a publish-ready infographic for a real estate blog post.
+- Not a generic banner.

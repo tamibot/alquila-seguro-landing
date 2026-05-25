@@ -1,0 +1,25 @@
+Crea una portada de blog 1200x630, limpia y profesional, con paleta azul corporativa y fondo claro.
+
+Objetivo: ilustrar la entrada "Criterios indispensables a la hora de evaluar a un inquilino".
+
+Texto exacto obligatorio:
+Título: "Criterios indispensables para evaluar a un inquilino"
+Subtítulo: "Matriz de riesgo 2026 para propietarios"
+Checklist (4 líneas):
+- "Reglas claras del inmueble"
+- "Capacidad de pago verificable"
+- "Historial de pago y referencias"
+- "Validación de antecedentes"
+
+Composición:
+- Columna izquierda: título y subtítulo.
+- Columna derecha: una tarjeta blanca con el checklist.
+- Parte inferior: 3 íconos simples (documento, escudo-check, barras de análisis).
+- Márgenes internos amplios; nada de texto al borde.
+
+Restricciones:
+- No texto cortado.
+- No texto duplicado.
+- No agregar textos adicionales.
+- Alta legibilidad en móvil.
+- Estilo sobrio, editorial, ordenado.

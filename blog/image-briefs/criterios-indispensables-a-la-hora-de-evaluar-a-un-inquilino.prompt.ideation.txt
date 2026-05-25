@@ -1,0 +1,7 @@
+Generate a professional real-estate infographic background (1200x630, no text).
+Theme: Criterios indispensables a la hora de evaluar a un inquilino
+Keywords: riesgo, morosidad, inquilino, evaluacion, resumen rápido, ¿por qué es clave, cumplimiento de requisitos, capacidad financiera para
+Use blue corporate palette and leave clear zones for:
+- Left headline block
+- Right checklist panel
+- Bottom 3 module cards

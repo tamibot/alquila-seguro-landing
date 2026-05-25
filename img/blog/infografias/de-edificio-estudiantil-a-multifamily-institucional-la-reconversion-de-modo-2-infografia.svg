@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Infografía De edificio estudiantil a multifamily institucional: la reconversión de MODO</title>
+  <desc id="desc">Resumen visual para De edificio estudiantil a multifamily institucional: la reconversión de MODO</desc>
+  <defs>
+    <linearGradient id="head-785114059" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="hsl(213,57%,30%)"/>
+      <stop offset="100%" stop-color="hsl(223,62%,46%)"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="1152" height="632" rx="32" fill="#fff"/>
+  <rect x="24" y="24" width="1152" height="170" rx="32" fill="url(#head-785114059)"/>
+  <text x="72" y="98" fill="#fff" font-family="'Segoe UI',Arial,sans-serif" font-size="42" font-weight="760">Infografía de apoyo</text>
+  <text x="72" y="140" fill="rgba(255,255,255,.92)" font-family="'Segoe UI',Arial,sans-serif" font-size="25">De edificio estudiantil a multifamily institucional: la reconversión de MODO</text>
+  <g transform="translate(86,230)">
+      <rect x="0" y="0" width="1032" height="350" rx="20" fill="#f4f8fd" stroke="#d6e4f0"/>
+      <circle cx="190" cy="176" r="96" fill="none" stroke="#2a7eb5" stroke-width="20"/>
+      <circle cx="526" cy="176" r="96" fill="none" stroke="#1d6f9f" stroke-width="20"/>
+      <circle cx="862" cy="176" r="96" fill="none" stroke="#165d87" stroke-width="20"/>
+      <text x="190" y="182" text-anchor="middle" fill="#17415f" font-family="'Segoe UI',Arial,sans-serif" font-size="26" font-weight="760">Producto</text>
+      <text x="526" y="182" text-anchor="middle" fill="#17415f" font-family="'Segoe UI',Arial,sans-serif" font-size="26" font-weight="760">Servicio</text>
+      <text x="862" y="182" text-anchor="middle" fill="#17415f" font-family="'Segoe UI',Arial,sans-serif" font-size="26" font-weight="760">Ocupación</text>
+      <text x="190" y="290" text-anchor="middle" fill="#4d687b" font-family="'Segoe UI',Arial,sans-serif" font-size="21">alineado al perfil de demanda</text>
+      <text x="526" y="290" text-anchor="middle" fill="#4d687b" font-family="'Segoe UI',Arial,sans-serif" font-size="21">como diferencial competitivo</text>
+      <text x="862" y="290" text-anchor="middle" fill="#4d687b" font-family="'Segoe UI',Arial,sans-serif" font-size="21">sostenible en el tiempo</text>
+    </g>
+</svg>

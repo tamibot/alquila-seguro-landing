@@ -1,0 +1,7 @@
+Generate a professional real-estate infographic background (1200x630, no text).
+Theme: ¿Qué gastos debes considerar después de comprar un departamento para alquilar en Lima?
+Keywords: inversion, gastos, impuestos, arbitrios, flujo de caja, resumen rápido, impuesto a la renta, arbitrios municipales e
+Use blue corporate palette and leave clear zones for:
+- Left headline block
+- Right checklist panel
+- Bottom 3 module cards
