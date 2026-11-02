@@ -773,29 +773,6 @@ nav {
     gap: 24px;
 }
 
-/* Guías legales de la home: mismas tarjetas que las herramientas, en grilla de 3 */
-.guides-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-}
-
-.guides-grid .learn-more-inline {
-    margin-top: auto;
-}
-
-@media (max-width: 1024px) {
-    .guides-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 640px) {
-    .guides-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .tools-mini-card {
     display: flex;
     flex-direction: column;
