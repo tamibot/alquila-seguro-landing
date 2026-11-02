@@ -1,50 +1,5 @@
 window.BLOG_POSTS = [
   {
-    url: 'post-contrato-de-alquiler-peru.html',
-    title: 'Contrato de alquiler en Perú: qué debe incluir, formalidades y modelo de referencia',
-    excerpt: 'Contrato de alquiler en Perú: qué debe incluir, cuándo legalizar firmas o usar escritura pública o FUA, cláusulas clave y un modelo de contrato de referencia.',
-    category: 'Legal',
-    tags: ['contrato', 'legal', 'modelo', 'fua'],
-    image: '../img/blog/blog-checklist-legal.svg',
-    search: 'contrato de alquiler peru modelo de contrato de alquiler casa departamento legalizar firmas escritura publica fua clausulas'
-  },
-  {
-    url: 'post-arrendador-y-arrendatario.html',
-    title: 'Arrendador y arrendatario: diferencia, derechos y obligaciones en Perú',
-    excerpt: 'Arrendador y arrendatario: quién es cada uno, en qué se diferencian y qué derechos y obligaciones les da el Código Civil peruano en un alquiler de vivienda.',
-    category: 'Legal',
-    tags: ['legal', 'codigo-civil', 'derechos', 'obligaciones'],
-    image: '../img/blog/blog-checklist-legal.svg',
-    search: 'arrendador y arrendatario diferencia quien es el arrendador quien es el arrendatario derechos obligaciones codigo civil'
-  },
-  {
-    url: 'post-clausula-de-allanamiento-futuro.html',
-    title: 'Cláusula de allanamiento futuro: qué es, base legal y cómo redactarla',
-    excerpt: 'Cláusula de allanamiento futuro: qué es, qué exige el artículo 594 del Código Procesal Civil (Ley 30201), cómo redactarla y qué pasa si tu contrato no la tiene.',
-    category: 'Legal',
-    tags: ['legal', 'allanamiento', 'desalojo', 'contrato'],
-    image: '../img/blog/blog-riesgo-morosidad.svg',
-    search: 'clausula de allanamiento futuro modelo ley 30201 articulo 594 codigo procesal civil desalojo'
-  },
-  {
-    url: 'post-desalojo-peru-tipos-y-plazos.html',
-    title: 'Desalojo en Perú: tipos, requisitos y plazos del proceso de desalojo',
-    excerpt: 'Desalojo en Perú: diferencias entre el desalojo judicial, el exprés con allanamiento, el notarial (Ley 30933) y el del FUA, con sus requisitos y plazos legales.',
-    category: 'Legal',
-    tags: ['legal', 'desalojo', 'notarial', 'ley-30933'],
-    image: '../img/blog/blog-riesgo-morosidad.svg',
-    search: 'desalojo peru proceso de desalojo notarial ley 30933 desalojo express fua decreto legislativo 1177 plazos inquilino moroso'
-  },
-  {
-    url: 'post-arbitrios-quien-paga-alquiler.html',
-    title: 'Arbitrios: quién los paga en un alquiler y cómo pactarlo en el contrato',
-    excerpt: 'Arbitrios municipales: qué son, por qué el obligado es el propietario aunque el depa esté alquilado, en qué se diferencian del predial y cómo pactarlos.',
-    category: 'Legal',
-    tags: ['legal', 'arbitrios', 'tributos', 'municipalidad'],
-    image: '../img/blog/blog-checklist-legal.svg',
-    search: 'arbitrios quien paga arbitrios en un alquiler propietario o inquilino impuesto predial municipalidad sat lima'
-  },
-  {
     url: 'post-que-gastos-debes-considerar-despues-de-comprar-un-departamento-para-alquilar-en-lima-2.html',
     title: '¿Qué gastos debes considerar después de comprar un departamento para alquilar en Lima?',
     excerpt: 'Guía completa para propietarios: impuesto 5%, predial, arbitrios, mantenimiento, contingencias y flujo neto para alquilar en Lima sin sorpresas.',
