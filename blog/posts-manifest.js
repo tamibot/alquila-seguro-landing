@@ -1,14 +1,5 @@
 window.BLOG_POSTS = [
   {
-    url: 'post-gastos-invertir-departamento-alquilar.html',
-    title: 'Gastos a tener en cuenta al invertir en un departamento para alquilar',
-    excerpt: 'Guía completa para propietarios: proforma, costos de cierre, mantenimiento, vacancia, impuestos y control de flujo neto para proteger rentabilidad al alquilar.',
-    category: 'Inversión',
-    tags: ['inversion', 'gastos', 'proforma', 'flujo-caja', 'rentabilidad'],
-    image: '../img/blog/gastos-invertir-departamento-alquilar.svg',
-    search: 'Gastos a tener en cuenta al invertir en un departamento para alquilar inversion gastos proforma flujo-caja rentabilidad gastos invertir departamento alquilar'
-  },
-  {
     url: 'post-que-gastos-debes-considerar-despues-de-comprar-un-departamento-para-alquilar-en-lima-2.html',
     title: '¿Qué gastos debes considerar después de comprar un departamento para alquilar en Lima?',
     excerpt: 'Guía completa para propietarios: impuesto 5%, predial, arbitrios, mantenimiento, contingencias y flujo neto para alquilar en Lima sin sorpresas.',
@@ -23,7 +14,7 @@ window.BLOG_POSTS = [
     excerpt: 'Lista completa de gastos al invertir en un departamento para alquilar en Perú: método de 3 pasos, proforma, costos de cierre, vacancia, corretaje, impuestos y flujo neto.',
     category: 'Inversión',
     tags: ['inversion', 'gastos', 'proforma', 'flujo-caja', 'vacancia', 'impuestos'],
-    image: '../img/blog/gastos-invertir-departamento-para-alquilar.png',
+    image: '../img/blog/gastos-invertir-departamento-para-alquilar.jpg',
     search: 'Gastos a tener en cuenta al invertir en un departamento para alquilar inversion gastos proforma flujo-caja vacancia impuestos costos de cierre corretaje mantenimiento checklist peru departamento para alquilar'
   },
   {
@@ -32,7 +23,7 @@ window.BLOG_POSTS = [
     excerpt: 'Diferencias reales entre corredor inmobiliario y administrador de departamentos: alcance, cobranza, mantenimiento, KPIs y control operativo para propietarios.',
     category: 'Gestión',
     tags: ['gestion', 'administracion', 'propietarios', 'operacion'],
-    image: '../img/blog/administrador-de-departamentos-en-peru-conceptos-clave.png',
+    image: '../img/blog/administrador-de-departamentos-en-peru-conceptos-clave.jpg',
     search: 'Administrador de departamentos en Perú versus un corredor inmobiliario gestion administracion propietarios operacion corredor inmobiliario cobranza mantenimiento kpi'
   },
   {
@@ -41,17 +32,8 @@ window.BLOG_POSTS = [
     excerpt: 'Guía para filtrar inquilinos con criterios financieros, documentales y de comportamiento para reducir morosidad y proteger la rentabilidad del alquiler.',
     category: 'Riesgo',
     tags: ['riesgo', 'morosidad', 'inquilino', 'evaluacion'],
-    image: '../img/blog/criterios-indispensables-a-la-hora-de-evaluar-a-un-inquilino.png',
+    image: '../img/blog/criterios-indispensables-a-la-hora-de-evaluar-a-un-inquilino.jpg',
     search: 'Criterios indispensables a la hora de evaluar a un inquilino riesgo morosidad inquilino evaluacion filtro capacidad de pago historial crediticio antecedentes'
-  },
-  {
-    url: 'post-criterios-indispensables-a-la-hora-de-evaluar-a-un-inquilino-2.html',
-    title: 'Criterios indispensables a la hora de evaluar a un inquilino',
-    excerpt: 'Versión 2026: matriz de riesgo para evaluar inquilinos con criterios de solvencia, historial, documentación y convivencia antes de firmar.',
-    category: 'Riesgo',
-    tags: ['riesgo', 'morosidad', 'inquilino', 'evaluacion'],
-    image: '../img/blog/criterios-indispensables-a-la-hora-de-evaluar-a-un-inquilino-2.png',
-    search: 'Criterios indispensables a la hora de evaluar a un inquilino riesgo morosidad inquilino evaluacion matriz puntaje solvencia historial crediticio 2026'
   },
   {
     url: 'post-inversion-inmobiliaria-conoce-sus-ventajas-y-desventajas.html',
@@ -142,60 +124,6 @@ window.BLOG_POSTS = [
     tags: ['riesgo', 'morosidad', 'inquilino', 'evaluacion'],
     image: '../img/blog/como-elegir-al-inquilino-correcto-y-proteger-tu-inversion-inmobiliaria-2.svg',
     search: 'Cómo elegir al inquilino correcto y proteger tu inversión inmobiliaria riesgo morosidad inquilino evaluacion como elegir al inquilino correcto y proteger tu inversion inmobiliaria 2'
-  },
-  {
-    url: 'post-guia-definitiva-como-alquilar-un-inmueble-de-forma-segura-2.html',
-    title: 'Guía Definitiva: ¿Cómo alquilar un inmueble de forma segura?',
-    excerpt: 'Un proceso claro reduce morosidad, protege legalmente al propietario y mantiene el valor del inmueble en el tiempo.',
-    category: 'Guía',
-    tags: ['guia', 'alquilar', 'lima', 'propietarios'],
-    image: '../img/blog/guia-definitiva-como-alquilar-un-inmueble-de-forma-segura-2.svg',
-    search: 'Guía Definitiva: ¿Cómo alquilar un inmueble de forma segura? guia alquilar lima propietarios guia definitiva como alquilar un inmueble de forma segura 2'
-  },
-  {
-    url: 'post-morosidad-de-alquiler-casi-nula-en-lima-el-modelo-proper-rentas-para-propietarios-que-quieren-alquilar-su-departamento-sin-riesgos-2.html',
-    title: 'Morosidad de alquiler casi nula en Lima: el modelo Proper Rentas para propietarios que quieren alquilar su departamento sin riesgos',
-    excerpt: 'Autor: Equipo Proper Rentas | Revisión: Área de Operaciones y Riesgo (Proper Rentas) | Política editorial · Contacto',
-    category: 'Riesgo',
-    tags: ['riesgo', 'morosidad', 'inquilino', 'evaluacion'],
-    image: '../img/blog/morosidad-de-alquiler-casi-nula-en-lima-el-modelo-proper-rentas-para-propietarios-que-quieren-alquilar-su-departamento-sin-riesgos-2.svg',
-    search: 'Morosidad de alquiler casi nula en Lima: el modelo Proper Rentas para propietarios que quieren alquilar su departamento sin riesgos riesgo morosidad inquilino evaluacion morosidad de alquiler casi nula en lima el modelo proper rentas para propietarios que quieren alquilar su departamento sin riesgos 2'
-  },
-  {
-    url: 'post-tienes-un-inmueble-en-alquiler-esta-es-la-razon-por-la-que-deberias-delegarlo-a-un-administrador-profesional-2.html',
-    title: '¿Tienes un inmueble en alquiler? Esta es la razón por la que deberías delegarlo a un administrador profesional',
-    excerpt: 'Resumen: Delegar la administración de tu alquiler reduce morosidad, vacancia y riesgo legal. Un servicio profesional se encarga de publicar, filtrar inquilinos,…',
-    category: 'Gestión',
-    tags: ['gestion', 'administracion', 'propietarios', 'operacion'],
-    image: '../img/blog/tienes-un-inmueble-en-alquiler-esta-es-la-razon-por-la-que-deberias-delegarlo-a-un-administrador-profesional-2.svg',
-    search: '¿Tienes un inmueble en alquiler? Esta es la razón por la que deberías delegarlo a un administrador profesional gestion administracion propietarios operacion tienes un inmueble en alquiler esta es la razon por la que deberias delegarlo a un administrador profesional 2'
-  },
-  {
-    url: 'post-radiografia-de-la-vivienda-en-el-peru-principales-indicadores-problematica-y-oportunidades-2.html',
-    title: 'Radiografía de la vivienda en el Perú: principales indicadores, problemática y oportunidades',
-    excerpt: 'Resumen: El Perú enfrenta una crisis estructural de vivienda: un déficit habitacional elevado, una expansión urbana predominantemente informal y brechas de servicios…',
-    category: 'Mercado',
-    tags: ['mercado', 'vivienda', 'peru', 'oportunidades'],
-    image: '../img/blog/radiografia-de-la-vivienda-en-el-peru-principales-indicadores-problematica-y-oportunidades-2.svg',
-    search: 'Radiografía de la vivienda en el Perú: principales indicadores, problemática y oportunidades mercado vivienda peru oportunidades radiografia de la vivienda en el peru principales indicadores problematica y oportunidades 2'
-  },
-  {
-    url: 'post-de-edificio-estudiantil-a-multifamily-institucional-la-reconversion-de-modo-2.html',
-    title: 'De edificio estudiantil a multifamily institucional: la reconversión de MODO',
-    excerpt: 'Resumen: MODO es un edificio de 20 pisos en San Miguel con más de 200 departamentos, concebido inicialmente para renta estudiantil. Cuando Proper Rentas asumió la…',
-    category: 'Tendencias',
-    tags: ['multifamily', 'tendencias', 'operacion', 'inversion'],
-    image: '../img/blog/de-edificio-estudiantil-a-multifamily-institucional-la-reconversion-de-modo-2.svg',
-    search: 'De edificio estudiantil a multifamily institucional: la reconversión de MODO multifamily tendencias operacion inversion de edificio estudiantil a multifamily institucional la reconversion de modo 2'
-  },
-  {
-    url: 'post-asi-es-vivir-en-modo-departamentos-modernos-en-alquiler-en-san-miguel-2.html',
-    title: 'Así es vivir en MODO: departamentos modernos en alquiler en San Miguel',
-    excerpt: 'Resumen: MODO es un edificio multifamily en San Miguel diseñado exclusivamente para alquiler formal. Ofrece departamentos modernos de 1, 2 y 3 dormitorios, pet…',
-    category: 'Tendencias',
-    tags: ['san-miguel', 'multifamily', 'demanda', 'lima'],
-    image: '../img/blog/asi-es-vivir-en-modo-departamentos-modernos-en-alquiler-en-san-miguel-2.svg',
-    search: 'Así es vivir en MODO: departamentos modernos en alquiler en San Miguel san-miguel multifamily demanda lima asi es vivir en modo departamentos modernos en alquiler en san miguel 2'
   },
   {
     url: 'post-administrador-de-departamentos-en-peru-conceptos-clave-2.html',

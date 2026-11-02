@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-PE">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alquila tu depa rápido y seguro | Gestión Inmobiliaria | AlquilaSeguro</title>
+    <title>Alquila tu depa rápido y seguro en Lima | AlquilaSeguro</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -35,12 +35,12 @@
     <meta property="og:image:alt" content="AlquilaSeguro - Entrega de departamento con respaldo y gestión segura">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.alquilaseguro.com.pe/">
-    <meta property="twitter:title" content="Alquila tu depa rápido y seguro | AlquilaSeguro">
-    <meta property="twitter:description"
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.alquilaseguro.com.pe/">
+    <meta name="twitter:title" content="Alquila tu depa rápido y seguro | AlquilaSeguro">
+    <meta name="twitter:description"
         content="Alquila tu casa o departamento rápido y seguro. Verificamos inquilinos, garantizamos la renta puntual y nos encargamos de toda la gestión.">
-    <meta property="twitter:image" content="https://www.alquilaseguro.com.pe/img/og-alquilaseguro-entrega.png">
+    <meta name="twitter:image" content="https://www.alquilaseguro.com.pe/img/og-alquilaseguro-entrega.png">
     <meta name="twitter:image:alt" content="AlquilaSeguro - Entrega de departamento con respaldo y gestión segura">
     <meta name="twitter:site" content="@alquilaseguro">
 
@@ -64,11 +64,75 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "RealEstateAgent",
-      "name": "AlquilaSeguro",
-      "url": "https://www.alquilaseguro.com.pe/",
-      "areaServed": "Lima, Peru",
-      "description": "Servicio para propietarios que quieren alquilar su departamento rápido y seguro."
+      "@graph": [
+        {
+          "@type": "RealEstateAgent",
+          "@id": "https://www.alquilaseguro.com.pe/#organization",
+          "name": "AlquilaSeguro",
+          "url": "https://www.alquilaseguro.com.pe/",
+          "logo": "https://www.alquilaseguro.com.pe/img/isologo-social-512.png",
+          "image": "https://www.alquilaseguro.com.pe/img/og-alquilaseguro-entrega.png",
+          "description": "Servicio para propietarios que quieren alquilar su departamento rápido y seguro en Lima Metropolitana: publicación, filtro de inquilinos, contrato y gestión mensual de alquileres de largo plazo.",
+          "telephone": "+51 912 462 976",
+          "email": "contacto@alquilaseguro.com.pe",
+          "areaServed": [
+            { "@type": "City", "name": "Lima" },
+            { "@type": "AdministrativeArea", "name": "Lima Metropolitana" }
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+51 912 462 976",
+            "contactType": "customer service",
+            "availableLanguage": "es",
+            "url": "https://wa.me/51912462976"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.alquilaseguro.com.pe/#website",
+          "name": "AlquilaSeguro",
+          "url": "https://www.alquilaseguro.com.pe/",
+          "inLanguage": "es-PE",
+          "publisher": { "@id": "https://www.alquilaseguro.com.pe/#organization" }
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://www.alquilaseguro.com.pe/#proceso",
+          "name": "Cómo alquilar tu depa con AlquilaSeguro",
+          "description": "Proceso simple para alquilar rápido, alquilar seguro y mantener control mensual.",
+          "inLanguage": "es-PE",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Cuéntanos de tu depa",
+              "text": "Validamos distrito, características y precio objetivo.",
+              "url": "https://www.alquilaseguro.com.pe/#proceso"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Publicamos y filtramos",
+              "text": "Atraemos prospectos y revisamos perfiles para reducir riesgos.",
+              "url": "https://www.alquilaseguro.com.pe/#proceso"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Contrato y cierre",
+              "text": "Formalizamos el alquiler con respaldo documental.",
+              "url": "https://www.alquilaseguro.com.pe/#proceso"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "Gestión mensual",
+              "text": "Hacemos seguimiento operativo para que cobres sin estrés.",
+              "url": "https://www.alquilaseguro.com.pe/#proceso"
+            }
+          ]
+        }
+      ]
     }
     </script>
     <script type="application/ld+json">
@@ -81,7 +145,7 @@
           "name": "¿Cuánto demora alquilar un depa con AlquilaSeguro?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "El promedio histórico es de 24 días, según distrito, precio y estado del inmueble."
+            "text": "El promedio histórico es de 23 días, pero puede variar según distrito, precio inicial, estado del inmueble y si está desocupado para visitas flexibles. Antes de publicar, te ayudamos a definir un precio competitivo para reducir vacancia y acelerar el cierre."
           }
         },
         {
@@ -89,28 +153,116 @@
           "name": "¿Qué incluye el servicio para propietarios?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Incluye difusión comercial, filtro de inquilinos, gestión contractual y seguimiento operativo."
+            "text": "Incluye difusión comercial, filtro de inquilinos, gestión contractual y seguimiento operativo. En administración mensual, también incluye control de recaudo e incidencias. El objetivo es que alquiles rápido, alquiles seguro y tengas menos carga operativa."
           }
         },
         {
           "@type": "Question",
-          "name": "¿En qué zonas trabajan?",
+          "name": "¿Qué pasa si el inquilino se atrasa en el pago?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Trabajamos en Lima Metropolitana para alquileres de largo plazo."
+            "text": "Se activa el flujo de cobranza definido en contrato. Si el atraso supera los plazos contractuales, se aplican penalidades y se evalúa la ruta legal correspondiente. Siempre se mantiene informado al propietario de cada avance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué zonas y tipo de alquiler trabajan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La operación está enfocada en Lima Metropolitana y alquileres de largo plazo (mínimo 12 meses). No se gestiona Airbnb, renta temporal ni habitaciones individuales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuándo recibo mi renta y cómo se paga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La renta se transfiere al propietario según el flujo operativo acordado, generalmente pocos días después de que paga el inquilino. El proceso es digital y con trazabilidad para que tengas control desde la app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo sé cuánto cobrar de alquiler por mi depa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trabaja con un rango de precio, uno mínimo y uno objetivo, y compáralo con propiedades equivalentes del mismo distrito y microzona: metraje, antigüedad, estado y atributos como cochera o ascensor. Usa los primeros 7 a 10 días de publicación para recalibrar. Para una referencia rápida, usa nuestra calculadora de alquiler."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo se evalúa al inquilino antes de firmar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se valida la capacidad de pago con ingresos verificables, el historial crediticio y de pagos, las referencias, los antecedentes relevantes y la consistencia de los documentos. Como regla básica, la renta mensual no debería superar alrededor de un tercio del ingreso bruto verificable del postulante. Revisar solo los ingresos no basta para aprobar un perfil."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué impuesto pago por alquilar mi departamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En Perú, los ingresos por alquiler de inmuebles son renta de primera categoría, con una tasa de referencia de 5% sobre la renta mensual y sin deducción de gastos operativos. El pago se realiza por los canales virtuales de SUNAT. Inclúyelo en tu proyección de renta neta desde el primer mes para evitar multas e intereses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué otros gastos debo considerar como propietario?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Además del impuesto a la renta, presupuesta el impuesto predial y los arbitrios municipales, que varían según el distrito y las características del predio, y el mantenimiento ordinario y extraordinario. En el contrato puedes definir qué pagos asume cada parte, aunque la responsabilidad principal ante la municipalidad sigue siendo del propietario."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué cláusulas no deben faltar en el contrato de alquiler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Define con claridad el plazo, la forma de pago, la penalidad por mora, las condiciones de mantenimiento y las causales de resolución. Antes de firmar, valida los documentos del propietario y del inquilino. Cuando estas cláusulas son precisas, se reducen las disputas y los tiempos de negociación en situaciones complejas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué diferencia hay entre un corredor inmobiliario y un administrador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El corredor se enfoca en la etapa comercial: publicación, visitas, filtro inicial y cierre del contrato. El administrador trabaja durante toda la vida del alquiler: cobranza, comunicación con el inquilino, mantenimiento, reportes al propietario y renovación o salida. Conseguir inquilino es un hito; administrar bien el inmueble durante 12 meses o más es un sistema."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo hablar con un asesor ahora?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Escríbenos por WhatsApp y te guiamos con una evaluación inicial de tu propiedad."
           }
         }
       ]
     }
     </script>
 
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome: carga no bloqueante del render -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <!-- Tipografía de marca (Manual de Marca): Montserrat, carga no bloqueante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+    </noscript>
 
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Preload Hero Image -->
-    <link rel="preload" as="image" href="img/hero_background.png">
+    <!-- Preload de imágenes del hero: <img> LCP (tarjeta del hero) y fondo CSS del hero -->
+    <link rel="preload" as="image" href="img/family_moving.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="img/hero_background.jpg">
 </head>
 
 <body>
@@ -119,75 +271,28 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Premium Full Screen Loader Overlay -->
-    <div id="loader">
-        <div class="loader-content">
-            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" class="premium-loader-svg">
-                <defs>
-                    <linearGradient id="gradient-primary" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="var(--color-primary)" />
-                        <stop offset="100%" stop-color="var(--color-secondary)" />
-                    </linearGradient>
-                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                        <feGaussianBlur stdDeviation="2" result="blur" />
-                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-                    </filter>
-                </defs>
-
-                <!-- Base ground line -->
-                <line class="ground-line" x1="10" y1="105" x2="110" y2="105" />
-
-                <!-- Main Building -->
-                <g class="building-paths">
-                    <path class="b-line b-left" d="M 30 105 L 30 45" />
-                    <path class="b-line b-right" d="M 90 105 L 90 45" />
-                    <path class="b-line b-roof" d="M 20 45 L 60 15 L 100 45" />
-                    <path class="b-line b-door" d="M 50 105 L 50 80 A 10 10 0 0 1 70 80 L 70 105" />
-                    <line class="b-line b-door-split" x1="60" y1="80" x2="60" y2="105" />
-                </g>
-
-                <!-- Windows -->
-                <g class="windows">
-                    <rect class="window w-1" x="42" y="55" width="12" height="12" rx="2" />
-                    <rect class="window w-2" x="66" y="55" width="12" height="12" rx="2" />
-                </g>
-
-                <!-- Security Shield Check -->
-                <g class="shield-group" transform="translate(65, 70)">
-                    <path class="shield-bg"
-                        d="M 15 0 L 30 8 L 30 22 C 30 32, 22 38, 15 42 C 8 38, 0 32, 0 22 L 0 8 Z" />
-                    <path class="shield-check" d="M 8 20 L 13 25 L 22 13" />
-                </g>
-            </svg>
-
-            <div class="loader-text-wrapper">
-                <span class="loader-text">AlquilaSeguro</span>
-                <div class="shimmer"></div>
-            </div>
-            <p class="loader-subtext">Preparando tu experiencia premium...</p>
-        </div>
-    </div>
-
-    <header>
+    <header class="site-header">
         <div class="container">
-            <nav>
-                <a href="#inicio" class="logo">
+            <nav aria-label="Navegación principal">
+                <a href="#inicio" class="logo" aria-label="AlquilaSeguro, ir al inicio">
                     <img src="icono-negro-_1_.svg" alt="Isologo AlquilaSeguro" class="logo-mark" width="40" height="40">
                     <span class="logo-wordmark"><span class="brand-heavy">Alquila</span><span class="brand-light">Seguro</span></span>
                 </a>
-                <ul class="nav-links">
-                    <li><a href="#inicio" class="active">Inicio</a></li>
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#proceso">Cómo Funciona</a></li>
+                    <li><a href="#proceso">Cómo funciona</a></li>
                     <li><a href="#herramientas">Herramientas</a></li>
                     <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#faq">Preguntas frecuentes</a></li>
-                    <li><a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
-                            target="_blank" rel="noopener noreferrer" class="btn">Contáctanos</a></li>
                 </ul>
-                <div class="mobile-menu-btn">
-                    <i class="fa-solid fa-bars"></i>
+                <div class="nav-actions">
+                    <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                        target="_blank" rel="noopener noreferrer" class="btn btn-sm header-cta">Contáctanos</a>
+                    <button type="button" class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false"
+                        aria-controls="nav-links">
+                        <span class="menu-icon" aria-hidden="true"></span>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -195,65 +300,62 @@
 
     <main>
         <section id="inicio" class="hero">
-            <div class="container">
+            <div class="container hero-grid">
                 <div class="hero-content">
-                    <span class="badge">Alquila rápido. Alquila seguro.</span>
-                    <h1>Alquila tu depa rápido, alquila seguro y sin complicarte</h1>
-                    <p>Publicamos tu propiedad, evaluamos inquilinos y gestionamos el proceso de punta a punta para
-                        que alquiles con menos vacancia, más control y pagos con seguimiento.</p>
+                    <h1>Alquila tu depa rápido, <span class="h1-soft">alquila seguro y sin complicarte</span></h1>
+                    <p class="hero-lead">Publicamos tu propiedad, evaluamos inquilinos y gestionamos el proceso de punta a
+                        punta para que alquiles con menos vacancia, más control y pagos con seguimiento.</p>
                     <div class="hero-actions">
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
-                            target="_blank" rel="noopener noreferrer" class="btn">Quiero alquilar mi depa <i class="fa-solid fa-arrow-right"
-                                style="margin-left: 10px;"></i></a>
+                            target="_blank" rel="noopener noreferrer" class="btn btn-light btn-lg">Quiero alquilar mi depa
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
-                            target="_blank" rel="noopener noreferrer" class="btn secondary-btn"><i class="fa-brands fa-whatsapp"
-                                style="margin-right: 10px;"></i> Contactar con un asesor</a>
+                            target="_blank" rel="noopener noreferrer" class="btn secondary-btn btn-lg"><i
+                                class="fa-brands fa-whatsapp" aria-hidden="true"></i> Contactar con un asesor</a>
                     </div>
+                    <p class="hero-note">Lima Metropolitana · Alquileres de largo plazo</p>
                 </div>
 
                 <div class="hero-visual">
-                    <div class="hero-card">
-                        <div style="position: relative;">
-                            <!-- Using generated image for services promo as fallback for video poster if needed, or just a nice image here -->
-                            <img src="img/family_moving.png" alt="Happy family moving in" width="600" height="400"
-                                loading="eager" fetchpriority="high" decoding="async">
-                            <button type="button" id="hero-video-trigger" class="play-button"
-                                aria-label="Ver video de testimonio destacado" data-video-id="SNKy5ZK891A">
-                                <i class="fa-solid fa-play"></i>
-                            </button>
-                        </div>
-                    </div>
+                    <figure class="hero-photo">
+                        <img src="img/family_moving.jpg" alt="Familia feliz mudándose a su nuevo departamento en alquiler" width="640" height="640"
+                            loading="eager" fetchpriority="high" decoding="async">
+                        <button type="button" id="hero-video-trigger" class="play-button"
+                            aria-label="Ver video de testimonio destacado" data-video-id="SNKy5ZK891A">
+                            <span class="play-icon" aria-hidden="true"><i class="fa-solid fa-play"></i></span>
+                            <span class="play-text">Ver testimonio</span>
+                        </button>
+                    </figure>
                 </div>
             </div>
         </section>
 
-        <section class="stats">
+        <section class="stats" aria-label="AlquilaSeguro en cifras">
             <div class="container">
                 <div class="stats-container">
                     <div class="stat-item">
-                        <h3>23</h3>
-                        <p>Días promedio</p>
+                        <strong class="stat-number">23</strong>
+                        <p>días promedio para alquilar</p>
                     </div>
                     <div class="stat-item">
-                        <h3>+10</h3>
-                        <p>Años Experiencia</p>
+                        <strong class="stat-number">+10</strong>
+                        <p>años de experiencia</p>
                     </div>
                     <div class="stat-item">
-                        <h3>0%</h3>
-                        <p>Tasa Desalojo</p>
+                        <strong class="stat-number">0%</strong>
+                        <p>tasa de desalojo</p>
                     </div>
                     <div class="stat-item">
-                        <h3>99%</h3>
-                        <p>Cobro Puntual</p>
+                        <strong class="stat-number">99%</strong>
+                        <p>de cobro puntual</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="servicios" class="services">
-            <div class="shape-bg"></div>
             <div class="container">
-                <div style="text-align: center;">
+                <div class="section-heading">
                     <h2 class="section-title">Tu depa alquilado rápido y con respaldo</h2>
                     <p class="section-subtitle">Nos enfocamos en lo que más te importa: menos vacancia, inquilino
                         confiable y pagos con seguimiento.</p>
@@ -261,66 +363,66 @@
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="icon-wrapper">
+                        <div class="icon-wrapper" aria-hidden="true">
                             <i class="fa-solid fa-bullhorn"></i>
                         </div>
                         <h3>Publicamos para alquilar rápido</h3>
                         <p>Difusión en portales y red comercial para generar visitas de calidad en menos tiempo.</p>
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
                             target="_blank" rel="noopener noreferrer" class="learn-more">Quiero alquilar rápido <i
-                                class="fa-solid fa-arrow-right"></i></a>
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
 
                     <div class="service-card">
-                        <div class="icon-wrapper">
+                        <div class="icon-wrapper" aria-hidden="true">
                             <i class="fa-solid fa-user-shield"></i>
                         </div>
                         <h3>Filtro de inquilino para alquilar seguro</h3>
                         <p>Validamos perfil financiero y antecedentes para reducir riesgos antes de firmar.</p>
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
                             target="_blank" rel="noopener noreferrer" class="learn-more">Quiero alquilar seguro <i
-                                class="fa-solid fa-arrow-right"></i></a>
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
 
                     <div class="service-card">
-                        <div class="icon-wrapper">
+                        <div class="icon-wrapper" aria-hidden="true">
                             <i class="fa-solid fa-sack-dollar"></i>
                         </div>
                         <h3>Seguimiento de cobros y administración</h3>
                         <p>Gestionamos la operación mensual y te mantenemos informado para que alquiles con tranquilidad.</p>
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
                             target="_blank" rel="noopener noreferrer" class="learn-more">Quiero alquilar mi depa <i
-                                class="fa-solid fa-arrow-right"></i></a>
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                     <div class="service-card">
-                        <div class="icon-wrapper">
+                        <div class="icon-wrapper" aria-hidden="true">
                             <i class="fa-solid fa-mobile-screen-button"></i>
                         </div>
                         <h3>App de cobranza y control</h3>
                         <p>Visualiza pagos, estado de cuenta y seguimiento de incidencias desde tu celular en tiempo real.</p>
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
                             target="_blank" rel="noopener noreferrer" class="learn-more">Quiero ver la app <i
-                                class="fa-solid fa-arrow-right"></i></a>
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                     <div class="service-card">
-                        <div class="icon-wrapper">
+                        <div class="icon-wrapper" aria-hidden="true">
                             <i class="fa-solid fa-scale-balanced"></i>
                         </div>
                         <h3>Contrato notarial y respaldo legal</h3>
                         <p>Te ayudamos con cláusulas clave para proteger tu propiedad y reducir riesgos durante el alquiler.</p>
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
                             target="_blank" rel="noopener noreferrer" class="learn-more">Quiero alquilar seguro <i
-                                class="fa-solid fa-arrow-right"></i></a>
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                     <div class="service-card">
-                        <div class="icon-wrapper">
+                        <div class="icon-wrapper" aria-hidden="true">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                         </div>
                         <h3>Soporte de mantenimiento</h3>
                         <p>Coordinamos incidencias con autorización del propietario para mantener el inmueble en buen estado.</p>
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
                             target="_blank" rel="noopener noreferrer" class="learn-more">Quiero conocer más <i
-                                class="fa-solid fa-arrow-right"></i></a>
+                                class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -328,41 +430,39 @@
 
         <section id="proceso" class="process">
             <div class="container">
-                <div style="text-align: center;">
+                <div class="section-heading">
                     <h2 class="section-title">Cómo alquilar tu depa con AlquilaSeguro</h2>
-                    <p class="section-subtitle">Proceso simple para alquilar rápido, alquilar seguro y mantener control
+                    <p class="section-subtitle">Cuatro pasos para alquilar rápido, alquilar seguro y mantener control
                         mensual.</p>
                 </div>
 
-                <div class="process-steps">
-                    <div class="step">
-                        <div class="step-icon"><i class="fa-solid fa-house-circle-check"></i></div>
-                        <h4>Cuéntanos de tu depa</h4>
-                        <div class="step-label">Paso 1</div>
+                <ol class="process-steps">
+                    <li class="step">
+                        <span class="step-label" aria-hidden="true">01</span>
+                        <h3>Cuéntanos de tu depa</h3>
                         <p>Validamos distrito, características y precio objetivo.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-icon"><i class="fa-solid fa-bullhorn"></i></div>
-                        <h4>Publicamos y filtramos</h4>
-                        <div class="step-label">Paso 2</div>
+                    </li>
+                    <li class="step">
+                        <span class="step-label" aria-hidden="true">02</span>
+                        <h3>Publicamos y filtramos</h3>
                         <p>Atraemos prospectos y revisamos perfiles para reducir riesgos.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-icon"><i class="fa-solid fa-file-signature"></i></div>
-                        <h4>Contrato y cierre</h4>
-                        <div class="step-label">Paso 3</div>
+                    </li>
+                    <li class="step">
+                        <span class="step-label" aria-hidden="true">03</span>
+                        <h3>Contrato y cierre</h3>
                         <p>Formalizamos el alquiler con respaldo documental.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-icon"><i class="fa-solid fa-sack-dollar"></i></div>
-                        <h4>Gestión mensual</h4>
-                        <div class="step-label">Paso 4</div>
+                    </li>
+                    <li class="step">
+                        <span class="step-label" aria-hidden="true">04</span>
+                        <h3>Gestión mensual</h3>
                         <p>Hacemos seguimiento operativo para que cobres sin estrés.</p>
-                    </div>
-                </div>
+                    </li>
+                </ol>
                 <div class="section-action">
                     <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
-                        target="_blank" rel="noopener noreferrer" class="btn">Quiero empezar hoy</a>
+                        target="_blank" rel="noopener noreferrer" class="btn">Quiero empezar hoy <i
+                            class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <p class="section-action-note">El primer paso es una conversación por WhatsApp.</p>
                 </div>
             </div>
         </section>
@@ -370,42 +470,46 @@
         <section id="herramientas" class="tools-section">
             <div class="container">
                 <div class="section-heading">
-                    <span class="section-kicker">Beneficios para propietarios</span>
                     <h2 class="section-title">Herramientas que te ayudan a alquilar mejor</h2>
-                    <p class="section-subtitle">No solo publicamos tu depa. También te damos herramientas para decidir
-                        precio, validar contrato y mejorar tus anuncios.</p>
+                    <p class="section-subtitle">No solo publicamos tu depa: decide el precio, revisa tu contrato y mejora
+                        tus anuncios con nuestras herramientas.</p>
                 </div>
 
-                <article class="tools-highlight-card">
-                    <div class="tools-highlight-content">
-                        <h3>Calcula cuánto cobrar por tu departamento</h3>
-                        <p>Usa nuestra calculadora para estimar un precio competitivo y reducir vacancia desde el
-                            primer mes de publicación.</p>
-                        <div class="tools-cta-row">
-                            <a href="herramientas/calculadora-alquiler.html" class="btn">Abrir calculadora</a>
-                            <a href="herramientas/index.html" class="learn-more-inline">Ver toolkit completo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
+                <div class="tools-layout">
+                    <article class="tools-highlight-card">
+                        <div class="tools-highlight-content">
+                            <h3>Calcula cuánto cobrar por tu departamento</h3>
+                            <p>Usa nuestra calculadora para estimar un precio competitivo y reducir vacancia desde el
+                                primer mes de publicación.</p>
+                            <div class="tools-cta-row">
+                                <a href="herramientas/calculadora-alquiler.html" class="btn btn-light">Abrir calculadora</a>
+                                <a href="herramientas/index.html" class="learn-more-inline">Ver toolkit completo <i
+                                        class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tools-highlight-visual">
-                        <img src="img/tools/tools-calculadora.svg"
-                            alt="Herramientas para propietarios de AlquilaSeguro" loading="lazy" decoding="async">
-                    </div>
-                </article>
+                        <div class="tools-highlight-visual">
+                            <img src="img/tools/tools-calculadora.svg"
+                                alt="Herramientas para propietarios de AlquilaSeguro" width="1200" height="760"
+                                loading="lazy" decoding="async">
+                        </div>
+                    </article>
 
-                <div class="tools-mini-grid">
-                    <article class="tools-mini-card">
-                        <h3>Analizador de contrato</h3>
-                        <p>Revisa cláusulas importantes y detecta puntos que debes validar antes de firmar.</p>
-                        <a href="herramientas/analizador-contrato.html" class="learn-more-inline">Ir a herramienta <i
-                                class="fa-solid fa-arrow-right"></i></a>
-                    </article>
-                    <article class="tools-mini-card">
-                        <h3>Generador de descripción</h3>
-                        <p>Crea descripciones claras y atractivas para portales y mejora la calidad de tus leads.</p>
-                        <a href="herramientas/generador-descripciones.html" class="learn-more-inline">Ir a herramienta
-                            <i class="fa-solid fa-arrow-right"></i></a>
-                    </article>
+                    <div class="tools-mini-grid">
+                        <article class="tools-mini-card">
+                            <i class="fa-solid fa-file-contract tools-mini-icon" aria-hidden="true"></i>
+                            <h3>Analizador de contrato</h3>
+                            <p>Revisa cláusulas importantes y detecta puntos que debes validar antes de firmar.</p>
+                            <a href="herramientas/analizador-contrato.html" class="learn-more-inline">Ir a herramienta <i
+                                    class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        </article>
+                        <article class="tools-mini-card">
+                            <i class="fa-solid fa-pen-to-square tools-mini-icon" aria-hidden="true"></i>
+                            <h3>Generador de descripción</h3>
+                            <p>Crea descripciones claras y atractivas para portales y mejora la calidad de tus leads.</p>
+                            <a href="herramientas/generador-descripciones.html" class="learn-more-inline">Ir a herramienta
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -413,33 +517,32 @@
         <section id="contacto" class="contact-section">
             <div class="container">
                 <div class="contact-card">
-                    <div class="contact-bg"></div>
+                    <div class="contact-bg" aria-hidden="true"></div>
                     <div class="contact-content">
-                        <h3>¿Listo para alquilar tu depa?</h3>
-                        <p style="opacity: 0.9; font-size: 1.1rem; margin-bottom: 30px;">Escríbenos por WhatsApp y te
-                            guiamos paso a paso para iniciar el proceso.</p>
+                        <h2 class="contact-title">¿Listo para alquilar tu depa?</h2>
+                        <p class="contact-text">Escríbenos por WhatsApp y te guiamos paso a paso para iniciar el proceso.</p>
+                    </div>
+                    <div class="contact-actions">
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
-                            target="_blank" rel="noopener noreferrer" class="btn btn-light"
-                            style="margin-top: 28px;">Contactar con un asesor</a>
+                            target="_blank" rel="noopener noreferrer" class="btn btn-light btn-lg"><i
+                                class="fa-brands fa-whatsapp" aria-hidden="true"></i> Contactar con un asesor</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="testimonios" class="testimonials-section">
-            <div class="container">
+            <div class="container testimonials-layout">
                 <div class="section-heading">
-                    <span class="section-kicker">Propietarios satisfechos</span>
                     <h2 class="section-title">Resultados reales de alquiler</h2>
-                    <p class="section-subtitle">Historias reales de propietarios que ya alquilaron su depa con
-                        AlquilaSeguro.
-                    </p>
+                    <p class="section-subtitle">Propietarios que ya alquilaron su depa con AlquilaSeguro cuentan su
+                        experiencia.</p>
                 </div>
                 <div class="testimonials-grid-flat">
                     <article class="testimonial-video-placeholder">
                         <div class="tvp-frame">
                             <iframe class="testimonial-iframe" data-video-id="EdtJ0ydfCs8"
-                                src="https://www.youtube.com/embed/EdtJ0ydfCs8?rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
+                                src="https://www.youtube.com/embed/EdtJ0ydfCs8?rel=0&modestbranding=1&playsinline=1&enablejsapi=1&origin=https%3A%2F%2Fwww.alquilaseguro.com.pe"
                                 title="Testimonio de propietario 1" loading="lazy"
                                 referrerpolicy="strict-origin-when-cross-origin"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -449,7 +552,7 @@
                     <article class="testimonial-video-placeholder">
                         <div class="tvp-frame">
                             <iframe class="testimonial-iframe" data-video-id="SNKy5ZK891A"
-                                src="https://www.youtube.com/embed/SNKy5ZK891A?rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
+                                src="https://www.youtube.com/embed/SNKy5ZK891A?rel=0&modestbranding=1&playsinline=1&enablejsapi=1&origin=https%3A%2F%2Fwww.alquilaseguro.com.pe"
                                 title="Testimonio de propietario 2" loading="lazy"
                                 referrerpolicy="strict-origin-when-cross-origin"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -459,7 +562,7 @@
                     <article class="testimonial-video-placeholder">
                         <div class="tvp-frame">
                             <iframe class="testimonial-iframe" data-video-id="_eu0ZTTYaFU"
-                                src="https://www.youtube.com/embed/_eu0ZTTYaFU?rel=0&modestbranding=1&playsinline=1&enablejsapi=1"
+                                src="https://www.youtube.com/embed/_eu0ZTTYaFU?rel=0&modestbranding=1&playsinline=1&enablejsapi=1&origin=https%3A%2F%2Fwww.alquilaseguro.com.pe"
                                 title="Testimonio de propietario 3" loading="lazy"
                                 referrerpolicy="strict-origin-when-cross-origin"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -472,64 +575,72 @@
 
         <section id="blog" class="blog-preview-section">
             <div class="container">
-                <div class="section-heading">
-                    <span class="section-kicker">Contenido para propietarios</span>
-                    <h2 class="section-title">Blog para alquilar rápido y seguro</h2>
-                    <p class="section-subtitle">Guías prácticas sobre precio, contrato, mercado y estrategias para
-                        lograr mejores cierres en menos tiempo.</p>
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <h2 class="section-title">Blog para alquilar rápido y seguro</h2>
+                        <p class="section-subtitle">Guías prácticas sobre precio, contrato y mercado para cerrar mejor y en
+                            menos tiempo.</p>
+                    </div>
+                    <a href="blog/index.html" class="btn btn-outline">Ver todas las entradas</a>
                 </div>
 
                 <div class="blog-preview-grid">
-                    <article class="blog-preview-card">
+                    <article class="blog-preview-card blog-preview-featured">
                         <img src="img/blog/blog-precios-lima-2026.svg"
-                            alt="Precios de alquiler en Lima por distrito" loading="lazy" decoding="async">
+                            alt="Precios de alquiler en Lima por distrito" width="1200" height="630"
+                            loading="lazy" decoding="async">
                         <div class="blog-preview-content">
                             <span class="blog-tag">Mercado</span>
                             <h3>Precios de alquiler en Lima por distrito</h3>
                             <p>Define un precio competitivo desde el inicio para acelerar visitas y cierres.</p>
                             <a href="blog/post-precios-alquiler-lima-2026.html" class="learn-more-inline">Leer nota <i
-                                    class="fa-solid fa-arrow-right"></i></a>
+                                    class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </article>
 
                     <article class="blog-preview-card">
                         <img src="img/blog/blog-guia-precio.svg"
-                            alt="Guía para fijar el precio ideal de alquiler" loading="lazy" decoding="async">
+                            alt="Guía para fijar el precio ideal de alquiler" width="1200" height="760"
+                            loading="lazy" decoding="async">
                         <div class="blog-preview-content">
                             <span class="blog-tag">Estrategia</span>
                             <h3>Cómo fijar el precio ideal de tu depa</h3>
                             <p>Checklist práctico para evitar sobreprecio y mejorar la ocupación mensual.</p>
                             <a href="blog/post-como-fijar-precio.html" class="learn-more-inline">Leer nota <i
-                                    class="fa-solid fa-arrow-right"></i></a>
+                                    class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </article>
 
                     <article class="blog-preview-card">
                         <img src="img/blog/blog-checklist-legal.svg"
-                            alt="Checklist legal para alquilar departamento en Perú" loading="lazy" decoding="async">
+                            alt="Checklist legal para alquilar departamento en Perú" width="1200" height="630"
+                            loading="lazy" decoding="async">
                         <div class="blog-preview-content">
                             <span class="blog-tag">Legal</span>
                             <h3>Checklist legal antes de alquilar</h3>
                             <p>Documentos y validaciones clave para reducir riesgos en el contrato.</p>
                             <a href="blog/post-checklist-legal.html" class="learn-more-inline">Leer nota <i
-                                    class="fa-solid fa-arrow-right"></i></a>
+                                    class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </article>
-                </div>
-
-                <div class="section-action">
-                    <a href="blog/index.html" class="btn">Ver todas las entradas</a>
                 </div>
             </div>
         </section>
 
         <section id="faq" class="faq-section">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-kicker">Dudas frecuentes</span>
-                    <h2 class="section-title">Preguntas frecuentes</h2>
-                    <p class="section-subtitle">Respuestas más detalladas para que tomes una decisión con seguridad antes
-                        de alquilar tu depa.</p>
+            <div class="container faq-layout">
+                <div class="faq-aside">
+                    <div class="section-heading">
+                        <h2 class="section-title">Preguntas frecuentes</h2>
+                        <p class="section-subtitle">Lo que suelen preguntarnos los propietarios antes de alquilar su depa.</p>
+                    </div>
+                    <div class="faq-contact">
+                        <p class="faq-contact-title">¿Tienes otra duda?</p>
+                        <p>Escríbenos por WhatsApp y un asesor revisa tu caso.</p>
+                        <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
+                            target="_blank" rel="noopener noreferrer" class="btn"><i class="fa-brands fa-whatsapp"
+                                aria-hidden="true"></i> Hablar con un asesor</a>
+                    </div>
                 </div>
 
                 <div class="faq-list">
@@ -539,7 +650,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>El promedio histórico es de 24 días, pero puede variar según distrito, precio inicial,
+                            <p>El promedio histórico es de 23 días, pero puede variar según distrito, precio inicial,
                                 estado del inmueble y si está desocupado para visitas flexibles.</p>
                             <p>Antes de publicar, te ayudamos a definir un precio competitivo para reducir vacancia y
                                 acelerar el cierre.</p>
@@ -591,6 +702,78 @@
                     </article>
                     <article class="faq-item">
                         <button class="faq-question" type="button">
+                            ¿Cómo sé cuánto cobrar de alquiler por mi depa?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Trabaja con un rango de precio, uno mínimo y uno objetivo, y compáralo con propiedades
+                                equivalentes del mismo distrito y microzona: metraje, antigüedad, estado y atributos como
+                                cochera o ascensor. Usa los primeros 7 a 10 días de publicación para recalibrar. Para una
+                                referencia rápida, usa nuestra <a href="herramientas/calculadora-alquiler.html">calculadora de alquiler</a>.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            ¿Cómo se evalúa al inquilino antes de firmar?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Se valida la capacidad de pago con ingresos verificables, el historial crediticio y de
+                                pagos, las referencias, los antecedentes relevantes y la consistencia de los documentos.
+                                Como regla básica, la renta mensual no debería superar alrededor de un tercio del ingreso
+                                bruto verificable del postulante. Revisar solo los ingresos no basta para aprobar un perfil.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            ¿Qué impuesto pago por alquilar mi departamento?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>En Perú, los ingresos por alquiler de inmuebles son renta de primera categoría, con una tasa
+                                de referencia de 5% sobre la renta mensual y sin deducción de gastos operativos. El pago se
+                                realiza por los canales virtuales de SUNAT. Inclúyelo en tu proyección de renta neta desde
+                                el primer mes para evitar multas e intereses.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            ¿Qué otros gastos debo considerar como propietario?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Además del impuesto a la renta, presupuesta el impuesto predial y los arbitrios municipales,
+                                que varían según el distrito y las características del predio, y el mantenimiento ordinario
+                                y extraordinario. En el contrato puedes definir qué pagos asume cada parte, aunque la
+                                responsabilidad principal ante la municipalidad sigue siendo del propietario.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            ¿Qué cláusulas no deben faltar en el contrato de alquiler?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Define con claridad el plazo, la forma de pago, la penalidad por mora, las condiciones de
+                                mantenimiento y las causales de resolución. Antes de firmar, valida los documentos del
+                                propietario y del inquilino. Cuando estas cláusulas son precisas, se reducen las disputas y
+                                los tiempos de negociación en situaciones complejas.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            ¿Qué diferencia hay entre un corredor inmobiliario y un administrador?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>El corredor se enfoca en la etapa comercial: publicación, visitas, filtro inicial y cierre del
+                                contrato. El administrador trabaja durante toda la vida del alquiler: cobranza, comunicación
+                                con el inquilino, mantenimiento, reportes al propietario y renovación o salida. Conseguir
+                                inquilino es un hito; administrar bien el inmueble durante 12 meses o más es un sistema.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
                             ¿Puedo hablar con un asesor ahora?
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
@@ -616,16 +799,16 @@
                     </a>
                     <p>La plataforma líder en gestión inmobiliaria. Garantizamos tu renta y cuidamos tu propiedad como
                         si fuera nuestra.</p>
-                    <p style="margin-top: 12px;">
+                    <p class="footer-whatsapp">
                         <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
-                            target="_blank" rel="noopener noreferrer" style="color:#fff;font-weight:700;">
-                            WhatsApp: +51 912 462 976
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp: +51 912 462 976
                         </a>
                     </p>
                 </div>
 
                 <div class="footer-links-col">
-                    <h4>Compañía</h4>
+                    <p class="footer-heading">Compañía</p>
                     <ul>
                         <li><a href="#inicio">Nosotros</a></li>
                         <li><a href="#servicios">Servicios</a></li>
@@ -638,11 +821,11 @@
                 </div>
 
                 <div class="footer-links-col">
-                    <h4>Legal</h4>
+                    <p class="footer-heading">Legal</p>
                     <ul>
-                        <li><span>Términos y Condiciones</span></li>
-                        <li><span>Política de Privacidad</span></li>
-                        <li><span>Libro de Reclamaciones</span></li>
+                        <li><a href="terminos-y-condiciones.html">Términos y Condiciones</a></li>
+                        <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="libro-de-reclamaciones.html">Libro de Reclamaciones</a></li>
                     </ul>
                 </div>
 
@@ -657,13 +840,13 @@
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/51912462976?text=Hola%2C%20vengo%20de%20la%20web%20de%20AlquilaSeguro%2C%20quisiera%20mas%20informacion."
         target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat en WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
     </a>
 
     <div id="video-modal" class="video-modal" aria-hidden="true">
         <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-label="Video destacado de AlquilaSeguro">
             <button type="button" class="video-modal-close" id="video-modal-close" aria-label="Cerrar video">
-                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
             </button>
             <div class="video-modal-embed">
                 <iframe id="hero-video-iframe" src=""

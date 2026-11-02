@@ -2,9 +2,28 @@ version: 1
 frontend:
   phases:
     build:
-      commands: []
+      commands:
+        # Publicar SOLO archivos públicos en dist/ (nada de *.md, PDF, .env*, package*.json,
+        # scripts/, mcp-integration/, blog/image-briefs/, *.prompt.used.txt ni *.qa.json).
+        - rm -rf dist
+        - mkdir -p dist/blog dist/herramientas
+        # Raíz: páginas, estilos, script, SEO/GEO y marca usada por el sitio
+        - cp index.html terminos-y-condiciones.html politica-de-privacidad.html libro-de-reclamaciones.html dist/
+        - cp styles.css script.js dist/
+        - cp robots.txt sitemap.xml llms.txt dist/
+        - cp icono-negro-_1_.svg dist/
+        # Imágenes (incluye favicons y logos de img/)
+        - cp -R img dist/img
+        # Blog: solo HTML, CSS y JS (sin image-briefs ni *.md)
+        - cp blog/*.html blog/*.css blog/*.js dist/blog/
+        # Herramientas: HTML, CSS y los JS que usan las páginas
+        - cp herramientas/*.html herramientas/*.css dist/herramientas/
+        - cp herramientas/calculadora.js herramientas/analizador-contrato.js herramientas/generador-descripciones.js dist/herramientas/
+        # Limpieza defensiva de archivos internos que pudieran haberse colado
+        - find dist -type f \( -name "*.md" -o -name "*.pdf" -o -name ".env*" -o -name "package*.json" -o -name "*.prompt.used.txt" -o -name "*.qa.json" -o -name "*.mjs" \) -delete
+        - find dist -type f | sort
   artifacts:
-    baseDirectory: /
+    baseDirectory: dist
     files:
       - '**/*'
   cache:
