@@ -232,13 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function sendAnalyticsEvent(eventName, params = {}) {
-        const payload = { event: eventName, ...params };
-        pushDataLayerEvent(payload);
-
-        // Direct GA4 delivery for immediate tracking, even before GTM event tags are configured.
-        if (typeof window.gtag === 'function') {
-            window.gtag('event', eventName, params);
-        }
+        // GTM already has one GA4 tag per event. Sending it through gtag too counted every click twice.
+        pushDataLayerEvent({ event: eventName, ...params });
     }
 
     const ctaSelectors = [
