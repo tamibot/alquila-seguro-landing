@@ -5,6 +5,10 @@ Archivo interno (no se publica: `amplify.yml` solo copia a `dist/` los archivos 
 Dónde configurarlas: consola de AWS Amplify → app → **Hosting → Rewrites and redirects** → *Manage redirects*.
 Amplify evalúa las reglas **de arriba hacia abajo**: dejar las específicas primero y las de dominio al final.
 
+**Cuándo:** solo después de publicar esta rama y revisarla en vivo. Antes no: las reglas 13 y 14 romperían las imágenes de la versión de mayo, que hoy está publicada.
+
+**Regla 16:** omitirla mientras no exista el subdominio blog.alquilaseguro.com.pe.
+
 ## Tabla de reglas
 
 | # | Origen (source) | Destino (target) | Tipo | Motivo |
