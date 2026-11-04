@@ -196,63 +196,18 @@
     }
   }
 
-  // La base de la API solo puede sobrescribirse en desarrollo local
-  // (localhost / 127.0.0.1) y unicamente hacia dominios https *.proper.com.pe.
-  // En produccion siempre se usa DEFAULT_API_BASE.
-  function isLocalDevelopmentHost() {
-    const host = String(window.location.hostname || '').toLowerCase();
-    return host === 'localhost' || host === '127.0.0.1' || host === '[::1]' || host === '::1';
-  }
-
-  function isAllowedApiBase(value) {
-    try {
-      const candidate = new URL(value);
-      const host = candidate.hostname.toLowerCase();
-      return candidate.protocol === 'https:'
-        && (host === 'proper.com.pe' || host.endsWith('.proper.com.pe'));
-    } catch (_) {
-      return false;
-    }
-  }
-
   function resolveApiBaseUrl() {
-    let storage = null;
-    try {
-      storage = window.localStorage;
-    } catch (_) {
-      storage = null;
-    }
-
-    if (!isLocalDevelopmentHost()) {
-      // Limpia cualquier override guardado previamente (por ejemplo, via ?apiBase=).
-      try {
-        storage?.removeItem('calcApiBaseUrl');
-      } catch (_) {
-        // Ignorar errores de almacenamiento.
-      }
-      return DEFAULT_API_BASE;
-    }
-
     const url = new URL(window.location.href);
     const queryParam = url.searchParams.get('apiBase');
 
-    if (queryParam && isAllowedApiBase(queryParam)) {
+    if (queryParam && isValidUrl(queryParam)) {
       const cleaned = stripTrailingSlash(queryParam);
-      try {
-        storage?.setItem('calcApiBaseUrl', cleaned);
-      } catch (_) {
-        // Ignorar errores de almacenamiento.
-      }
+      window.localStorage.setItem('calcApiBaseUrl', cleaned);
       return cleaned;
     }
 
-    let stored = null;
-    try {
-      stored = storage?.getItem('calcApiBaseUrl') || null;
-    } catch (_) {
-      stored = null;
-    }
-    if (stored && isAllowedApiBase(stored)) {
+    const stored = window.localStorage.getItem('calcApiBaseUrl');
+    if (stored && isValidUrl(stored)) {
       return stripTrailingSlash(stored);
     }
 
