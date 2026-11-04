@@ -1,38 +1,24 @@
 # AlquilaSeguro
 
-> AlquilaSeguro es un servicio para propietarios en Lima Metropolitana (Perú) que quieren alquilar su departamento o casa rápido y seguro. Publica el inmueble, evalúa a los inquilinos, formaliza el contrato y hace la gestión mensual del alquiler. Trabaja solo alquileres de largo plazo (mínimo 12 meses); no gestiona Airbnb, renta temporal ni habitaciones individuales.
+> AlquilaSeguro es un portal gratuito de guías legales y herramientas para propietarios que alquilan su departamento o casa en Perú. Explica en lenguaje simple el contrato de alquiler, la cláusula de allanamiento futuro, el desalojo, los arbitrios y el impuesto al alquiler, según la ley peruana. Sus guías son informativas y no reemplazan la asesoría de un abogado.
 
-## Servicio
+## Qué encuentras
 
-- Publicación del inmueble en portales y red comercial para generar visitas de calidad.
-- Filtro de inquilinos: validación de perfil financiero y antecedentes antes de firmar.
-- Contrato notarial y respaldo legal, con cláusulas clave para proteger la propiedad.
-- Seguimiento de cobros y administración mensual, con control de recaudo e incidencias.
-- App de cobranza y control: pagos, estado de cuenta e incidencias desde el celular.
-- Soporte de mantenimiento, coordinado con autorización del propietario.
-- Si el inquilino se atrasa, se activa el flujo de cobranza definido en contrato; el propietario recibe información de cada avance.
+- Guías legales con sus fuentes oficiales, como el Código Civil, SUNAT y el SAT de Lima.
+- Un modelo de contrato de alquiler de referencia.
+- Una calculadora para estimar cuánto cobrar de alquiler.
 
-## Proceso
+## Si prefieres que alguien lo gestione
 
-1. Cuéntanos de tu depa: se valida distrito, características y precio objetivo.
-2. Publicamos y filtramos: se atraen prospectos y se revisan perfiles.
-3. Contrato y cierre: se formaliza el alquiler con respaldo documental.
-4. Gestión mensual: seguimiento operativo de cobros e incidencias.
-
-## Cifras publicadas en el sitio
-
-- 23 días promedio para alquilar (varía según distrito, precio, estado del inmueble y disponibilidad para visitas).
-- +10 años de experiencia.
-- 0% tasa de desalojo.
-- 99% de cobro puntual.
+AlquilaSeguro no administra inmuebles. Quien quiera delegar la búsqueda del inquilino, el contrato y la cobranza en Lima puede conocer [Proper Rentas](https://landing-rentas.proper.com.pe/).
 
 ## Páginas clave
 
-- [Inicio](https://www.alquilaseguro.com.pe/): servicio, proceso, testimonios y preguntas frecuentes.
+- [Inicio](https://www.alquilaseguro.com.pe/)
 - [Preguntas frecuentes](https://www.alquilaseguro.com.pe/#faq)
-- [Blog para propietarios](https://www.alquilaseguro.com.pe/blog/): guías de precio, contrato, inquilinos, impuestos y mercado en Lima.
+- [Blog para propietarios](https://www.alquilaseguro.com.pe/blog/)
 - [Herramientas](https://www.alquilaseguro.com.pe/herramientas/)
-- [Calculadora de alquiler](https://www.alquilaseguro.com.pe/herramientas/calculadora-alquiler.html): estimación referencial de cuánto cobrar.
+- [Calculadora de alquiler](https://www.alquilaseguro.com.pe/herramientas/calculadora-alquiler.html)
 - [Mapa del sitio](https://www.alquilaseguro.com.pe/sitemap.xml)
 
 ## Guías legales para propietarios (Perú)
@@ -54,7 +40,6 @@
 
 - WhatsApp: +51 912 462 976 (https://wa.me/51912462976)
 - Correo: contacto@alquilaseguro.com.pe
-- Zona de atención: Lima Metropolitana, Perú.
 
 ## Legal
 
