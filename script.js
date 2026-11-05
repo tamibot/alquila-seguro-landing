@@ -2,10 +2,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
 
-    faqItems.forEach(item => {
+    faqItems.forEach((item, index) => {
         const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
         if (!question) {
             return;
+        }
+
+        // Accesibilidad: relación pregunta-respuesta y estado expandido
+        if (answer) {
+            const answerId = answer.id || `faq-answer-${index + 1}`;
+            answer.id = answerId;
+            question.setAttribute('aria-controls', answerId);
+        }
+        question.setAttribute('aria-expanded', 'false');
+        const chevron = question.querySelector('i');
+        if (chevron) {
+            chevron.setAttribute('aria-hidden', 'true');
         }
 
         question.addEventListener('click', () => {
@@ -13,11 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
             faqItems.forEach(otherItem => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-question')?.setAttribute('aria-expanded', 'false');
                 }
             });
 
             // Toggle current item
-            item.classList.toggle('active');
+            const isOpen = item.classList.toggle('active');
+            question.setAttribute('aria-expanded', String(isOpen));
         });
     });
 
@@ -83,32 +98,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
-    if (mobileBtn) {
-        mobileBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+    function setMenuOpen(isOpen) {
+        if (!mobileBtn || !navLinks) {
+            return;
+        }
+        navLinks.classList.toggle('active', isOpen);
+        mobileBtn.classList.toggle('is-open', isOpen);
+        mobileBtn.setAttribute('aria-expanded', String(isOpen));
+        mobileBtn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+    }
 
-            // Toggle icon
-            const icon = mobileBtn.querySelector('i');
-            if (navLinks.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
+    if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+            setMenuOpen(!navLinks.classList.contains('active'));
+        });
+
+        // Close mobile menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => setMenuOpen(false));
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+                setMenuOpen(false);
+                mobileBtn.focus();
             }
         });
     }
-
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            if (navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
-                mobileBtn.querySelector('i').classList.remove('fa-times');
-                mobileBtn.querySelector('i').classList.add('fa-bars');
-            }
-        });
-    });
 
     // Scrollspy.
     const sectionIds = ['inicio', 'servicios', 'proceso', 'herramientas', 'testimonios', 'blog', 'faq'];
@@ -142,7 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoModalDialog = videoModal?.querySelector('.video-modal-dialog');
     const videoModalClose = document.getElementById('video-modal-close');
     const heroVideoIframe = document.getElementById('hero-video-iframe');
-    const testimonialIframes = document.querySelectorAll('.testimonial-iframe[data-video-id]');
 
     function buildYouTubeEmbedUrl(videoId, autoplay = false) {
         const safeOrigin = window.location.origin && window.location.origin !== 'null'
@@ -185,13 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    testimonialIframes.forEach((iframe) => {
-        const videoId = iframe.dataset.videoId;
-        if (!videoId) {
-            return;
-        }
-        iframe.src = buildYouTubeEmbedUrl(videoId, false);
-    });
+    // Nota: los iframes de testimonios ya traen su src final (con origin) en el HTML.
+    // No se reescribe el src aquí para no anular el loading="lazy" nativo.
 
     if (videoModalClose) {
         videoModalClose.addEventListener('click', closeVideoModal);
@@ -222,13 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function sendAnalyticsEvent(eventName, params = {}) {
-        const payload = { event: eventName, ...params };
-        pushDataLayerEvent(payload);
-
-        // Direct GA4 delivery for immediate tracking, even before GTM event tags are configured.
-        if (typeof window.gtag === 'function') {
-            window.gtag('event', eventName, params);
-        }
+        // GTM already has one GA4 tag per event. Sending it through gtag too counted every click twice.
+        pushDataLayerEvent({ event: eventName, ...params });
     }
 
     const ctaSelectors = [
@@ -285,20 +290,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 video_context: 'hero'
             });
         });
-    }
-});
-
-// --- Loader Fade Out Logic ---
-// We place this outside DOMContentLoaded to wait for images and resources
-window.addEventListener('load', () => {
-    const loader = document.getElementById('loader');
-    if (loader) {
-        // Keep loader short so first paint is not blocked.
-        setTimeout(() => {
-            loader.style.opacity = '0';
-            setTimeout(() => {
-                loader.style.display = 'none';
-            }, 800); // Matches CSS transition time
-        }, 900);
     }
 });

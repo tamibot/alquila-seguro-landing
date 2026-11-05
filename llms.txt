@@ -1,0 +1,48 @@
+# AlquilaSeguro
+
+> AlquilaSeguro es un portal gratuito de guías legales y herramientas para propietarios que alquilan su departamento o casa en Perú. Explica en lenguaje simple el contrato de alquiler, la cláusula de allanamiento futuro, el desalojo, los arbitrios y el impuesto al alquiler, según la ley peruana. Sus guías son informativas y no reemplazan la asesoría de un abogado.
+
+## Qué encuentras
+
+- Guías legales con sus fuentes oficiales, como el Código Civil, SUNAT y el SAT de Lima.
+- Un modelo de contrato de alquiler de referencia.
+- Una calculadora para estimar cuánto cobrar de alquiler.
+
+## Si prefieres que alguien lo gestione
+
+AlquilaSeguro no administra inmuebles. Quien quiera delegar la búsqueda del inquilino, el contrato y la cobranza en Lima puede conocer [Proper Rentas](https://landing-rentas.proper.com.pe/).
+
+## Páginas clave
+
+- [Inicio](https://www.alquilaseguro.com.pe/)
+- [Preguntas frecuentes](https://www.alquilaseguro.com.pe/#faq)
+- [Blog para propietarios](https://www.alquilaseguro.com.pe/blog/)
+- [Herramientas](https://www.alquilaseguro.com.pe/herramientas/)
+- [Calculadora de alquiler](https://www.alquilaseguro.com.pe/herramientas/calculadora-alquiler.html)
+- [Mapa del sitio](https://www.alquilaseguro.com.pe/sitemap.xml)
+
+## Guías legales para propietarios (Perú)
+- [Contrato de alquiler en Perú: qué incluir y modelo de referencia](https://www.alquilaseguro.com.pe/blog/post-contrato-de-alquiler-peru.html)
+- [Arrendador y arrendatario: diferencias, derechos y obligaciones](https://www.alquilaseguro.com.pe/blog/post-arrendador-y-arrendatario.html)
+- [Cláusula de allanamiento futuro: qué es y cómo redactarla](https://www.alquilaseguro.com.pe/blog/post-clausula-de-allanamiento-futuro.html)
+- [Desalojo en Perú: tipos, requisitos y plazos](https://www.alquilaseguro.com.pe/blog/post-desalojo-peru-tipos-y-plazos.html)
+- [Arbitrios en un alquiler: ¿los paga el propietario o el inquilino?](https://www.alquilaseguro.com.pe/blog/post-arbitrios-quien-paga-alquiler.html)
+
+## Guías destacadas del blog
+
+- [Cómo fijar un precio de alquiler competitivo en Lima](https://www.alquilaseguro.com.pe/blog/post-como-fijar-precio.html)
+- [Cómo evaluar a un inquilino antes de firmar: criterios y documentos](https://www.alquilaseguro.com.pe/blog/post-como-evaluar-a-un-inquilino.html)
+- [Cómo alquilar un departamento en Perú paso a paso](https://www.alquilaseguro.com.pe/blog/post-como-alquilar-departamento-paso-a-paso.html)
+- [Checklist legal para alquilar sin contingencias](https://www.alquilaseguro.com.pe/blog/post-checklist-legal.html)
+- [Impuesto al alquiler 2026 en Perú](https://www.alquilaseguro.com.pe/blog/post-impuesto-alquiler-sunat-2026.html)
+
+## Contacto
+
+- WhatsApp: +51 912 462 976 (https://wa.me/51912462976)
+- Correo: contacto@alquilaseguro.com.pe
+
+## Legal
+
+- [Términos y Condiciones](https://www.alquilaseguro.com.pe/terminos-y-condiciones.html)
+- [Política de Privacidad](https://www.alquilaseguro.com.pe/politica-de-privacidad.html)
+- [Libro de Reclamaciones](https://www.alquilaseguro.com.pe/libro-de-reclamaciones.html)

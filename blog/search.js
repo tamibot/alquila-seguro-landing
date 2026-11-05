@@ -36,7 +36,7 @@ function renderPostsFromManifest() {
 
       return `
         <article class="post-card" data-search="${post.search || ''}" data-tags="${normalizedTags}">
-          <img src="${post.image}" alt="${post.title}" loading="lazy" decoding="async">
+          <img src="${post.image}" alt="${post.title}" width="1200" height="630" loading="lazy" decoding="async">
           <div class="post-body">
             <span class="tag">${post.category || 'Guía'}</span>
             <h3>${post.title}</h3>
